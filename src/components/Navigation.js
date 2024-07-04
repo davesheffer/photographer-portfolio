@@ -30,7 +30,6 @@ const Navigation = ({amatic}) => {
                             width={50}
                             height={50}
                         />
-                        
                         <h1 className={`font-amatic text-3xl ${amatic.className}`}>נופר שפר</h1>
                     </Link>
                 </div>
@@ -45,7 +44,7 @@ const Navigation = ({amatic}) => {
                                         className="App-logo w-auto md:h-10 h-7"
                                         alt="logo"
                                     />
-                                    <h1 className="font-amatic text-3xl">נופר שפר</h1>
+                                    <h1 className={`font-amatic text-3xl ${amatic.className}`}>נופר שפר</h1>
                                 </Link>
                             </div>
                             <div className="flex flex-col gap-6 text-md">
@@ -56,19 +55,19 @@ const Navigation = ({amatic}) => {
                                     בית
                                 </Link>
                                 <Link
-                                    href="gallery/people"
+                                    href="/gallery/people"
                                     onClick={handleMenu}
                                     className=" text-black hover:text-rose-500">
                                     אנשים
                                 </Link>
                                 <Link
-                                    href="gallery/art"
+                                    href="/gallery/art"
                                     onClick={handleMenu}
                                     className=" text-black hover:text-rose-500">
                                     אמנות
                                 </Link> 
                                 <Link
-                                    href="gallery/cars"
+                                    href="/gallery/cars"
                                     onClick={handleMenu}
                                     className=" text-black hover:text-rose-500">
                                     רכבים

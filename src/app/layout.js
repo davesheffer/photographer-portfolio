@@ -1,7 +1,8 @@
-import { Inter } from "next/font/google";
+import { Amatic_SC } from "next/font/google";
 import "./globals.css";
+import Navigation from "@/components/Navigation";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Amatic_SC({ subsets: ["hebrew"], display: "swap", style: "normal", weight: '700', stretch: "normal", variant: "normal", size: "100%", lineHeight: 1.5, text: "inherit", textTransform: "none", letterSpacing: "normal"});
 
 export const metadata = {
   title: "Create Next App",
@@ -10,8 +11,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" dir="rtl">
+      <body className={inter.className}>
+        <div className="h-[100vh]">
+          <Navigation />
+          {children}
+        </div>
+      
+        
+        </body>
     </html>
   );
 }

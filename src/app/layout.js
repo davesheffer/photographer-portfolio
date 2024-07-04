@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" dir="rtl">
-      <body className={openSans.className}>
+      <body className={`${openSans.className} overflow-x-scroll`}>
         <div className="h-[100vh]">
           <Navigation amatic={amatic} />
           {children}

@@ -2,7 +2,7 @@ import { Amatic_SC } from "next/font/google";
 import "./globals.css";
 import Navigation from "@/components/Navigation";
 
-const inter = Amatic_SC({ subsets: ["hebrew"], display: "swap", style: "normal", weight: '700', stretch: "normal", variant: "normal", size: "100%", lineHeight: 1.5, text: "inherit", textTransform: "none", letterSpacing: "normal"});
+const inter = Amatic_SC({ subsets: ["hebrew"], display: "swap", style: "normal", weight: '700', stretch: "normal", variant: "normal", size: "100%", lineHeight: 1.5, text: "inherit", textTransform: "none", letterSpacing: "normal" });
 
 export const metadata = {
   title: "Create Next App",
@@ -17,9 +17,7 @@ export default function RootLayout({ children }) {
           <Navigation />
           {children}
         </div>
-      
-        
-        </body>
+      </body>
     </html>
   );
 }

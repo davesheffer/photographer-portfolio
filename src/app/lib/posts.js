@@ -1,8 +1,8 @@
-import friends from "../assets/com/friends.jpg";
-import fun from "../assets/com/fun.jpg";
-import mombaby from "../assets/com/mombaby.jpg";
-import rakefet from "../assets/com/rakefet.jpg";
-import bishof2 from "../assets/com/bishof2.jpg";
+import friends from "/public/com/friends.jpg";
+import fun from "/public/com/fun.jpg";
+import mombaby from "/public/com/mombaby.jpg";
+import rakefet from "/public/com/rakefet.jpg";
+import bishof2 from "/public/com/bishof2.jpg";
 
 const posts = [
     {

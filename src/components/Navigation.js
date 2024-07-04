@@ -11,7 +11,8 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 
-const Navigation = () => {
+
+const Navigation = ({amatic}) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const handleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -30,7 +31,7 @@ const Navigation = () => {
                             height={50}
                         />
                         
-                        <h1 className="font-amatic text-3xl">נופר שפר</h1>
+                        <h1 className={`font-amatic text-3xl ${amatic.className}`}>נופר שפר</h1>
                     </Link>
                 </div>
                 <div id="nav" className={`fixed shadow-2xl top-0 right-0 h-[calc(100dvh)] ${isMenuOpen ? 'w-[60vw]' : ' translate-x-[60vw]'} transition-all bg-white px-4`}>
@@ -112,7 +113,7 @@ const Navigation = () => {
                             width={50}
                             height={50}
                         />
-                        <h1 className="font-amatic text-4xl">נופר שפר</h1>
+                        <h1 className={`font-amatic text-4xl ${amatic.className}`}>נופר שפר</h1>
                     </Link>
                     <div className="flex flex-col gap-6 text-md">
                         <Link

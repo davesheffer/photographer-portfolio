@@ -1,18 +1,18 @@
-// Desc: Navigation component for the website
-// Usage: <Navigation />
-"use client"; 
+"use client";
 
 import { useState } from "react";
-import logo from "/public/logo.png";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
 import Link from 'next/link';
+import Image from "next/image";
+import { usePathname } from 'next/navigation'
+import logo from "/public/logo.png";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
-import Image from "next/image";
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
 
-
-const Navigation = ({amatic}) => {
+const Navigation = ({ amatic }) => {
+    const currentPath = usePathname()
+    console.log(currentPath)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const handleMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -22,7 +22,7 @@ const Navigation = ({amatic}) => {
             <header className=" shadow-lg lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10">
                 <div className="px-4 flex items-center gap-4">
                     {!isMenuOpen && <CiMenuFries onClick={handleMenu} className="text-rose-500 text-4xl cursor-pointer" width={30} height={50} />}
-                    <Link className="flex gap-4 items-center relative" href="/">
+                    <Link className={`flex gap-4 items-center relative`} href="/">
                         <Image
                             src={logo}
                             className="App-logo w-auto md:h-10 h-7"
@@ -38,7 +38,7 @@ const Navigation = ({amatic}) => {
                         <div className="flex flex-col gap-10">
                             <div className="flex items-center gap-4 h-[70px]">
                                 {isMenuOpen && <IoMdClose onClick={handleMenu} className="text-rose-500 text-4xl cursor-pointer" width={50} height={50} />}
-                                <Link className="flex gap-4 items-center relative" href="/" onClick={handleMenu}>
+                                <Link className={`flex gap-4 items-center relative `} href="/" onClick={handleMenu}>
                                     <Image
                                         src={logo}
                                         className="App-logo w-auto md:h-10 h-7"
@@ -51,37 +51,37 @@ const Navigation = ({amatic}) => {
                                 <Link
                                     href="/"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500  ${currentPath === "/" && "text-rose-500"}`}>
                                     בית
                                 </Link>
                                 <Link
                                     href="/gallery/people"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500 ${currentPath === "/gallery/people" && "text-rose-500"}`}>
                                     אנשים
                                 </Link>
                                 <Link
                                     href="/gallery/art"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500 ${currentPath === "/gallery/art" && "text-rose-500"}`}>
                                     אמנות
-                                </Link> 
+                                </Link>
                                 <Link
                                     href="/gallery/cars"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500 ${currentPath === "/gallery/cars" && "text-rose-500"}`}>
                                     רכבים
                                 </Link>
                                 <Link
                                     href="/blog"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500 ${currentPath === "/blog" && "text-rose-500"}`}>
                                     בלוג
                                 </Link>
                                 <Link
                                     href="/contact"
                                     onClick={handleMenu}
-                                    className=" text-black hover:text-rose-500">
+                                    className={`text-black hover:text-rose-500 ${currentPath === "/contact" && "text-rose-500"}`}>
                                     צור קשר
                                 </Link>
                             </div>
@@ -117,32 +117,32 @@ const Navigation = ({amatic}) => {
                     <div className="flex flex-col gap-6 text-md">
                         <Link
                             href="/"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/" && "text-rose-500"}`}>
                             בית
                         </Link>
                         <Link
                             href="/gallery/people"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/gallery/people" && "text-rose-500"}`}>
                             אנשים
                         </Link>
                         <Link
                             href="/gallery/art"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/gallery/art" && "text-rose-500"}`}>
                             אמנות
-                        </Link> 
+                        </Link>
                         <Link
                             href="/gallery/cars"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/gallery/cars" && "text-rose-500"}`}>
                             רכבים
                         </Link>
                         <Link
                             href="/blog"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/blog" && "text-rose-500"}`}>
                             בלוג
                         </Link>
                         <Link
                             href="/contact"
-                            className=" text-black hover:text-rose-500">
+                            className={`text-black hover:text-rose-500 ${currentPath === "/contact" && "text-rose-500"}`}>
                             צור קשר
                         </Link>
                     </div>

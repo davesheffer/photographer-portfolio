@@ -9,7 +9,7 @@ import Slider_6 from "/public/slider/diz.jpg";
 import Slider_7 from "/public/slider/chair.png";
 
 // Community Images
-
+import yael from "/public/wg/family/yael.jpg";
 import bishof2 from "/public/com/bishof2.jpg";
 import friends from "/public/com/friends.jpg";
 import fun from "/public/com/fun.jpg";
@@ -36,6 +36,17 @@ import third from "/public/cars/3.jpg";
 import fourth from "/public/cars/4.png";
 import fifth from "/public/cars/5.png";
 import sixth from "/public/cars/6.png";
+
+// gallery images
+import h1 from "/public/wg/h/h1.jpg";
+import h2 from "/public/wg/h/h2.jpg";
+import h3 from "/public/wg/h/h3.jpg";
+import h4 from "/public/wg/h/h4.jpg";
+import h5 from "/public/wg/h/h5.jpg";
+import h6 from "/public/wg/h/h6.jpg";
+import h7 from "/public/wg/h/h7.jpg";
+
+
 
 const images = {
     cars: [
@@ -87,11 +98,7 @@ const images = {
             alt: "eyal",
         },
 
-        {
-            id: 4,
-            src: Slider_4,
-            alt: "seder",
-        },
+        
         {
             id: 5,
             src: Slider_5,
@@ -107,6 +114,16 @@ const images = {
             src: Slider_7,
             alt: "yam",
         },
+        {
+            id: 7,
+            src: two,
+            alt: "two", 
+        },
+        {
+            id: 7,
+            src: yael,
+            alt: "two", 
+        }
     ],
     art: [
         {
@@ -155,44 +172,44 @@ const images = {
         [
             {
                 id: 2,
-                src: bishof2,
+                src: h1,
                 alt: "bishof2",
             },
             {
                 id: 3,
-                src: friends,
+                src: h2,
                 alt: "friends",
 
             },
             {
                 id: 4,
-                src: fun,
+                src: h3,
                 alt: "fun",
                 style: "landscape",
 
             },
             {
                 id: 5,
-                src: mombaby,
+                src: h4,
                 alt: "mombaby",
                 style: "landscape"
             },
 
             {
                 id: 7,
-                src: shlomit,
+                src: h5,
                 alt: "shlomit",
                 style: "landscape"
             },
             {
                 id: 8,
-                src: smile,
+                src: h6,
                 alt: "smile",
                 style: "landscape"
             },
             {
                 id: 9,
-                src: stand,
+                src: h7,
                 alt: "stand",
             },
             {

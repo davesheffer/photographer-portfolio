@@ -9,8 +9,9 @@ import 'swiper/css/effect-fade';
 
 export default function Home() {
   return (
-    <main className=" h-screen md:w-[85vw] w-full md:mr-[15vw] md:px-10 px-2 overflow-hidden z-0 " >
+    <main className=" h-screen md:w-[85vw] w-full md:mr-[15vw] md:px-10 py-4 overflow-hidden z-0 " >
       <hr className="mb-2" />
+   
       <Swiper
         modules={[Autoplay, EffectFade]}
         spaceBetween={50}
@@ -32,6 +33,8 @@ export default function Home() {
           </SwiperSlide>
         ))}
       </Swiper>
+   
+      
       <div
         id="footer"
         className=" border-t-2 mt-2 border-gray-300 flex items-center justify-center h-[3vh]">

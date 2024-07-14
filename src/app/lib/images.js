@@ -9,7 +9,7 @@ import Slider_6 from "/public/slider/diz.jpg";
 import Slider_7 from "/public/slider/chair.png";
 
 // Community Images
-import yael from "/public/wg/family/yael.jpg";
+import yael from "/public/wg/family/fam5.jpg";
 import bishof2 from "/public/com/bishof2.jpg";
 import friends from "/public/com/friends.jpg";
 import fun from "/public/com/fun.jpg";
@@ -45,6 +45,22 @@ import h4 from "/public/wg/h/h4.jpg";
 import h5 from "/public/wg/h/h5.jpg";
 import h6 from "/public/wg/h/h6.jpg";
 import h7 from "/public/wg/h/h7.jpg";
+
+import f1 from "/public/wg/friends/f1.jpg";
+import f2 from "/public/wg/friends/f2.jpg";
+import f3 from "/public/wg/friends/f3.jpg";
+import f4 from "/public/wg/friends/f4.jpg";
+import f5 from "/public/wg/friends/f5.jpg";
+import bm1 from "/public/wg/bama/bama1.jpg";
+import bm2 from "/public/wg/bama/bama2.jpg";
+import bm3 from "/public/wg/bama/bama3.jpg";
+import bm4 from "/public/wg/bama/bama4.jpg";
+import bm5 from "/public/wg/bama/bama5.jpg";
+import bm6 from "/public/wg/bama/bama6.jpg";
+import bm7 from "/public/wg/bama/bama7.jpg";
+import bm8 from "/public/wg/bama/bama8.jpg";
+import bm9 from "/public/wg/bama/bama9.jpg";
+
 
 
 
@@ -173,71 +189,73 @@ const images = {
             {
                 id: 2,
                 src: h1,
-                alt: "bishof2",
+                alt: "h1",
                 style: "landscape",
             },
             {
                 id: 3,
                 src: h2,
-                alt: "friends",
+                alt: "h2",
                 style: "landscape",
 
             },
             {
                 id: 4,
                 src: h3,
-                alt: "fun",
+                alt: "h3",
                 style: "landscape",
 
             },
             {
                 id: 5,
                 src: h4,
-                alt: "mombaby",
+                alt: "h4",
                 style: "landscape"
             },
 
             {
                 id: 7,
                 src: h5,
-                alt: "shlomit",
+                alt: "h5",
                 style: "landscape"
             },
             {
                 id: 8,
                 src: h6,
-                alt: "smile",
+                alt: "h6",
                 style: "landscape"
             },
             {
                 id: 9,
                 src: h7,
-                alt: "stand",
+                alt: "h7",
                 style: "landscape",
             },
            
         ],
         [
             {
-                id: 2,
-                src: bishof2,
+                id: 10,
+                src: f1,
                 alt: "bishof2",
+                style: "landscape"
 
             },
             {
                 id: 3,
-                src: friends,
+                src: f2,
                 alt: "friends",
+                style: "landscape"
             },
             {
                 id: 4,
-                src: fun,
-                alt: "fun",
+                src: f3,
+                alt: "f2",
                 style: "landscape",
             },
             {
                 id: 5,
-                src: mombaby,
+                src: f4,
                 alt: "mombaby",
                 style: "landscape",
                 featured: true,
@@ -245,75 +263,36 @@ const images = {
 
             {
                 id: 7,
-                src: shlomit,
+                src: f5,
                 alt: "shlomit",
                 style: "landscape"
-            },
-            {
-                id: 8,
-                src: smile,
-                alt: "smile",
-                style: "landscape"
-            },
-            {
-                id: 9,
-                src: stand,
-                alt: "stand",
-            },
-            {
-                id: 10,
-                src: together,
-                alt: "together",
-                style: "landscape"
-            },
+            }
+        
         ],
         [
             {
                 id: 2,
-                src: bishof2,
+                src: bm1,
                 alt: "bishof2",
             },
             {
                 id: 3,
-                src: friends,
+                src: bm2,
                 alt: "friends",
             },
             {
                 id: 4,
-                src: fun,
+                src: bm3,
                 alt: "fun",
                 style: "landscape"
             },
             {
                 id: 5,
-                src: mombaby,
+                src: bm5,
                 alt: "mombaby",
                 style: "landscape",
             },
-            {
-                id: 7,
-                src: shlomit,
-                alt: "shlomit",
-                style: "landscape",
-                featured: true,
-            },
-            {
-                id: 8,
-                src: smile,
-                alt: "smile",
-                style: "landscape"
-            },
-            {
-                id: 9,
-                src: stand,
-                alt: "stand",
-            },
-            {
-                id: 10,
-                src: together,
-                alt: "together",
-                style: "landscape"
-            },
+           
         ],
         [
             {

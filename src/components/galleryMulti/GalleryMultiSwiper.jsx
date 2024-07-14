@@ -4,7 +4,7 @@ import "swiper/css";
 import 'swiper/css/effect-fade';
 import GalleryMultiSlide from "../galleryMulti/GalleryMultiSlide";
 const GalleryMultiSwiper = ({ galleries }) => {
-
+    console.log(galleries)
     return (
         <div>
             <Swiper

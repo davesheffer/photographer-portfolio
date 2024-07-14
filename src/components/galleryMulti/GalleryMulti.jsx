@@ -22,7 +22,7 @@ const GalleryMulti = ({ gallery }) => {
 
     return (
         <div className="md:columns-2 columns-1">
-            {images[gallery].map((galleries, index) => (
+            {images[gallery].map((   galleries, index) => (
                 <div key={index} className="py-2" onClick={() => handleImageClick(galleries)}>
                     <GalleryMultiSwiper key={index} galleries={galleries} />
                 </div>

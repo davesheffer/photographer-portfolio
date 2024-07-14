@@ -174,11 +174,13 @@ const images = {
                 id: 2,
                 src: h1,
                 alt: "bishof2",
+                style: "landscape",
             },
             {
                 id: 3,
                 src: h2,
                 alt: "friends",
+                style: "landscape",
 
             },
             {
@@ -211,14 +213,9 @@ const images = {
                 id: 9,
                 src: h7,
                 alt: "stand",
-            },
-            {
-                id: 10,
-                src: together,
-                alt: "together",
                 style: "landscape",
-                featured: true,
             },
+           
         ],
         [
             {

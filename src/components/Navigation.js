@@ -41,7 +41,7 @@ const Navigation = ({ amatic }) => {
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
               נופר שפר
             </h1>
-            <h3>אמנית ויזואלית</h3>
+            <h3>צלמת ואמנית ויזואלית</h3>
             </div>
           </Link>
         </div>
@@ -76,7 +76,7 @@ const Navigation = ({ amatic }) => {
                     <h1 className={`font-amatic text-3xl ${amatic.className}`}>
                       נופר שפר
                     </h1>
-                    <h3>אמנית ויזואלית</h3>
+                    <h3>צלמת ואמנית ויזואלית</h3>
                   </div>
                 </Link>
               </div>
@@ -97,26 +97,9 @@ const Navigation = ({ amatic }) => {
                     currentPath === "/gallery/people" && "text-rose-500"
                   }`}
                 >
-                  אנשים
+                  גלריות
                 </Link>
-                <Link
-                  href="/gallery/art"
-                  onClick={handleMenu}
-                  className={`text-black hover:text-rose-500 ${
-                    currentPath === "/gallery/art" && "text-rose-500"
-                  }`}
-                >
-                  אמנות
-                </Link>
-                <Link
-                  href="/gallery/cars"
-                  onClick={handleMenu}
-                  className={`text-black hover:text-rose-500 ${
-                    currentPath === "/gallery/cars" && "text-rose-500"
-                  }`}
-                >
-                  רכבים
-                </Link>
+                
                 <Link
                   href="/blog"
                   onClick={handleMenu}
@@ -167,7 +150,7 @@ const Navigation = ({ amatic }) => {
               <h1 className={`font-amatic text-6xl ${amatic.className}`}>
                 נופר שפר
               </h1>
-              <h3 className="text-2xl">אמנית ויזואלית</h3>
+              <h3 className="text-2xl">צלמת ואמנית ויזואלית</h3>
             </div>
           </Link>
           <div className="flex flex-col gap-6 text-xl">
@@ -185,24 +168,9 @@ const Navigation = ({ amatic }) => {
                 currentPath === "/gallery/people" && "text-rose-500"
               }`}
             >
-              אנשים
+              גלריות
             </Link>
-            <Link
-              href="/gallery/art"
-              className={`text-black hover:text-rose-500 ${
-                currentPath === "/gallery/art" && "text-rose-500"
-              }`}
-            >
-              אמנות
-            </Link>
-            <Link
-              href="/gallery/cars"
-              className={`text-black hover:text-rose-500 ${
-                currentPath === "/gallery/cars" && "text-rose-500"
-              }`}
-            >
-              רכבים
-            </Link>
+            
             <Link
               href="/blog"
               className={`text-black hover:text-rose-500 ${

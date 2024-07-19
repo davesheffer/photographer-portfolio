@@ -19,7 +19,7 @@ const Navigation = ({ amatic }) => {
   };
   return (
     <>
-      <header className=" shadow-lg lg:hidden App-header fixed top-0 right-0 h-[calc(15dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10">
+      <header className=" shadow-lg lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10">
         <div className="px-4 flex items-center gap-4">
           {!isMenuOpen && (
             <CiMenuFries
@@ -41,7 +41,7 @@ const Navigation = ({ amatic }) => {
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
               נופר שפר
             </h1>
-            <h3>צלמת ואמנית ויזואלית</h3>
+            <h3 >צלמת ואמנית ויזואלית</h3>
             </div>
           </Link>
         </div>
@@ -49,7 +49,7 @@ const Navigation = ({ amatic }) => {
           id="nav"
           className={`fixed shadow-2xl top-0 right-0 h-[calc(100dvh)] ${
             isMenuOpen ? "w-[60vw]" : " translate-x-[60vw]"
-          } transition-all bg-white px-4`}
+          } transition-all bg-white px-4 pt-4`}
         >
           <div className="flex flex-col justify-between h-full">
             <div className="flex flex-col gap-10">

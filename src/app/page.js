@@ -21,7 +21,7 @@ export default function Home() {
           delay: 3000,
         }}
         effect={"fade"}
-        fadeEffect={{ crossFade: true }}
+        // fadeEffect={{ crossFade: true }}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}>
         {images.slider.map((image, index) => (

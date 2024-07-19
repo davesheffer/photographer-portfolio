@@ -142,11 +142,11 @@ const images = {
             src: Slider_7,
             alt: "yam",
         },
-        {
-            id: 7,
-            src: two,
-            alt: "two", 
-        },
+        // {
+        //     id: 7,
+        //     src: two,
+        //     alt: "two", 
+        // },
         {
             id: 7,
             src: yael,
@@ -358,11 +358,61 @@ const images = {
                 alt: "two",  
                 style: "landscape",
             },
+            // {
+            //     id: 8,
+            //     src: yasmin,
+            //     alt: "yasmin",
+            //     style: "landscape",
+            // },
+        ],
+        [
+            {
+                id: 2,
+                src: wed1,
+                alt: "bishof2",
+                style: "landscape",
+
+            },
+            {
+                id: 3,
+                src: wed2,
+                alt: "friends",
+                style: "landscape",
+            },
+            {
+                id: 4,
+                src: wed3,
+                alt: "fun",
+                style: "landscape",
+
+            },
+            {
+                id: 5,
+                src:  wed4,
+                alt: "mombaby",
+                style: "landscape",
+            },
+
+            {
+                id: 7,
+                src: wed5,
+                alt: "shlomit",
+                style: "landscape",
+            },
             {
                 id: 8,
-                src: yasmin,
-                alt: "yasmin",
+                src: wed6,
+                alt: "smile",
                 style: "landscape",
+                featured: true,
+            },
+            {
+                id: 10,
+                src:  wed7,
+                alt: "together",
+                style: "landscape",
+
+
             },
         ],
         [
@@ -396,7 +446,7 @@ const images = {
             {
                 id: 7,
                 src: f5,
-                alt: "shlomit",
+                alt : "shlomit",
                 style: "landscape",
             },
           
@@ -460,57 +510,8 @@ const images = {
             },
            
            
-        ],
-        [
-            {
-                id: 2,
-                src: wed1,
-                alt: "bishof2",
-                style: "landscape",
-
-            },
-            {
-                id: 3,
-                src: wed2,
-                alt: "friends",
-                style: "landscape",
-            },
-            {
-                id: 4,
-                src: wed3,
-                alt: "fun",
-                style: "landscape",
-
-            },
-            {
-                id: 5,
-                src:  wed4,
-                alt: "mombaby",
-                style: "landscape",
-            },
-
-            {
-                id: 7,
-                src: wed5,
-                alt: "shlomit",
-                style: "landscape",
-            },
-            {
-                id: 8,
-                src: wed6,
-                alt: "smile",
-                style: "landscape",
-                featured: true,
-            },
-            {
-                id: 10,
-                src:  wed7,
-                alt: "together",
-                style: "landscape",
-
-
-            },
-        ],
+        ]
+     
       
     ],
 };

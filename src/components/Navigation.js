@@ -136,7 +136,7 @@ const Navigation = ({ amatic }) => {
         </div>
       </header>
 
-      <header className=" hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 border-l-4 w-[15vw]">
+      <header className="hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 border-l-4 w-[15vw]">
         <div id="main" className="flex gap-10 flex-col">
           <Link className="flex gap-4 items-center relative" href="/">
             <Image
@@ -150,7 +150,7 @@ const Navigation = ({ amatic }) => {
               <h1 className={`font-amatic text-6xl ${amatic.className}`}>
                 נופר שפר
               </h1>
-              <h3 className="text-2xl">צלמת ואמנית ויזואלית</h3>
+              <h3 className="text-md">צלמת ואמנית ויזואלית</h3>
             </div>
           </Link>
           <div className="flex flex-col gap-6 text-xl">

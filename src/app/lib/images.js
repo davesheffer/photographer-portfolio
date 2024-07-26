@@ -126,8 +126,8 @@ const images = {
         [
             {
                 name: "hilel" ,
-                order: 4,
-                featured: 2,
+                order: 2,
+              
                 images: [
                     {
                         id: 1,
@@ -140,46 +140,49 @@ const images = {
                         src: h2,
                         alt: "h2",
                         style: "landscape",
-        
+                       
                     },
                     {
                         id: 3,
                         src: h3,
                         alt: "h3",
                         style: "landscape",
+                        
         
                     },
                     {
                         id: 4,
                         src: h4,
                         alt: "h4",
-                        style: "landscape"
+                        style: "landscape",
+                       
                     },
                     {
                         id: 5,
                         src: h5,
                         alt: "h5",
-                        style: "landscape"
+                        style: "landscape",
+                       
                     },
                     {
                         id: 6,
                         src: h6,
                         alt: "h6",
                         style: "landscape",
-                        featured: true,
+                        
                     },
                     {
                         id: 7,
                         src: h7,
                         alt: "h7",
                         style: "landscape",
-                        
+                        featured: true,
                     },
                 ]
             },
             {
                 name: "friends",
-                order: 1,
+                order: 6,
                 featured: 2,
                 images: [
                     {
@@ -224,23 +227,21 @@ const images = {
             },
             {
                 name: "bama",
-                order: 7,
-                featured: 2,
+                order: 1,
+               
                 images: [
                     {
                         id: 1,
                         src: bm1,
                         alt: "bishof2",
                         style: "landscape",
-                      
                        
-        
                     },
                     {
                         id: 2,
                         src: bm2,
                         alt: "friends",
-                    
+                       
                        
                     },
                     {
@@ -248,6 +249,7 @@ const images = {
                         src: bm3,
                         alt: "fun",
                         style: "landscape",
+                        featured: true,
                     },
         
                     {
@@ -293,25 +295,27 @@ const images = {
             },
             {
                 name: "wedding",
-                order: 3,
-                featured: 2,
+                order: 4,
                 images: [
                     {
                         id: 1,
                         src: wed1,
-                        alt: ""
+                        alt: "",
+                      
                     },
                     {
                         id: 2,
                         src: wed2,
                         alt: "friends",
                         style: "landscape",
+                
                     },
                     {
                         id: 3,
                         src: wed3,
                         alt: "fun",
                         style: "landscape",
+                     
         
                     },
                     {
@@ -319,6 +323,7 @@ const images = {
                         src: wed4,
                         alt: "mombaby",
                         style: "landscape",
+                     
                     },
         
                     {
@@ -326,6 +331,7 @@ const images = {
                         src: wed5,
                         alt: "shlomit",
                         style: "landscape",
+                      
                     },
                     {
                         id: 6,
@@ -333,6 +339,7 @@ const images = {
                         alt: "smile",
                         style: "landscape",
                         featured: true,
+                       
                     },
                     {
                         id: 7,
@@ -346,8 +353,8 @@ const images = {
             },
             {
                 name: "family",
-                order: 2,
-                featured: 2,
+                order: 3,
+                featured: 3,
                 images: [
                     {
                         id: 1,
@@ -373,7 +380,7 @@ const images = {
                         src: fam5,
                         alt: "mombaby",
                         style: "landscape",
-                        featured: true,
+                       
                     },
         
                     {
@@ -442,53 +449,9 @@ const images = {
                         style: "landscape",
 
                     },
-                ]
-                        
+                ]       
             },
-            {
-                name: "cars",
-                order: 6,
-                featured: 2,
-                images: [
-                    {
-                        id: 1,
-                        src: first,
-                        alt: "first",
-                        style: "landscape",
-                    },
-                    {
-                        id: 2,
-                        src: second,
-                        alt: "second",
-                        style: "landscape",
-                    },
-                    {
-                        id: 3,
-                        src: third,
-                        alt: "third",
-                        style: "landscape",
-                    },
-                    {
-                        id: 4,
-                        src: fourth,
-                        alt: "fourth",
-                        style: "landscape",
-                    },
-                    {
-                        id: 5,
-                        src: fifth,
-                        alt: "fifth",
-                        style: "landscape",
-                        featured: true,
-                    },
-                    {
-                        id: 6,
-                        src: sixth,
-                        alt: "sixth",
-                    
-                    },
-                ]
-            }, 
+           
         ],
     ],
 };

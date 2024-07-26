@@ -38,7 +38,7 @@ export default function Home() {
       <div
         id="footer"
         className=" border-t-2 mt-2 border-gray-300 flex items-center justify-center h-[3vh]">
-        <span> כל הזכויות שמורות לנופר שפר © 2024</span>
+        <span> כל הזכויות שמורות נופר שפר © 2024</span>
       </div>
     </main>
   );

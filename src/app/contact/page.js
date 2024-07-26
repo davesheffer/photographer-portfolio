@@ -1,5 +1,6 @@
 import images from "@/app/lib/images";
 import Image from "next/image";
+console.log("images", )   ;  
 const Contanct = () => {
     return (
         <div className="md:w-[85vw]  md:mr-[15vw] p-5 md:mt-0 mt-[15vh]">
@@ -14,7 +15,7 @@ const Contanct = () => {
                         <p>מייל: d@ylm.co.il </p>
                     </div>
 
-                    <Image src={images.cars[5].src} alt="" className="w-[50vh]" />
+                    <Image src={images.people[0][0].images[0].src} alt="" className="w-[50vh]" />
                 </div>
 
             </div>

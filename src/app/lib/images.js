@@ -29,14 +29,6 @@ import ladies from "/public/art/ladies.jpg";
 import two from "/public/art/two.jpg";
 import yasmin from "/public/art/yasmin.jpg";
 
-
-import first from "/public/cars/1.png";
-import second from "/public/cars/2.png";
-import third from "/public/cars/3.jpg";
-import fourth from "/public/cars/4.png";
-import fifth from "/public/cars/5.png";
-import sixth from "/public/cars/6.png";
-
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
 import h2 from "/public/wg/h/h2.jpg";

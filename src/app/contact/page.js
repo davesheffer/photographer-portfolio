@@ -8,7 +8,7 @@ const Contanct = () => {
             <div className="flex md:flex-col flex-row justify-center items-center h-[90vh]">
                 <div className="flex gap-10 flex-col md:flex-row">
                     <div className="">
-                        <p className="text-6xl font-amatic">נופר שפר</p>
+                 ß       <p className="text-6xl font-amatic">נופר שפר</p>
                         <p>צלמת אירועי חברה, פרפורמס ומשפחה</p>
                         <hr className="mb-4" />
                         <p>נייד: 052-1234567</p>

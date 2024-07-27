@@ -306,7 +306,7 @@ const images = {
                         src: wed2,
                         alt: "friends",
                         style: "landscape",
-                        featured: true,
+                      
                     },
                     {
                         id: 3,
@@ -332,6 +332,7 @@ const images = {
                         src: wed5,
                         alt: "shlomit",
                         style: "landscape",
+                        featured: true,
                       
                     },
                     {

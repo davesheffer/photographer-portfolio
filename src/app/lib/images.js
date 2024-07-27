@@ -65,6 +65,12 @@ import wed5 from "/public/wg/wedding/wed5.jpg";
 import wed6 from "/public/wg/wedding/wed6.jpg";
 import wed7 from "/public/wg/wedding/wed7.jpg";
 
+import bd1 from "/public/wg/bd/bd1.jpg";
+import bd2 from "/public/wg/bd/bd2.jpg";
+import bd3 from "/public/wg/bd/bd3.jpg";
+import bd4 from "/public/wg/bd/bd4.jpg";
+import bd5 from "/public/wg/bd/bd5.jpg";
+import bd6 from "/public/wg/bd/bd6.jpg";
 
 
 
@@ -385,62 +391,48 @@ const images = {
                 ]
             },
             {
-                name: "art",
+                name: "bd",
                 order: 5,
                 featured: 2,
                 images: [
                     {
                         id: 1,
-                        src: d,
+                        src: bd1,
                         alt: "d",
                         style: "landscape",
                     },
                     {
                         id: 2,
-                        src: flora,
+                        src: bd2,
                         alt: "flora",
                        
                     },
             
                     {
                         id: 3,
-                        src: girl,
+                        src: bd3,
                         alt: "girl",
                       
                     },
                     {
                         id: 4,
-                        src: girl2,
+                        src: bd4,
                         alt: "girl2",
                         style: "landscape",
                     },
                     {
                         id: 5,
-                        src: house,
+                        src: bd5,
                         alt: "house",
                        
                     },
                     {
                         id: 6,
-                        src: ladies,
+                        src: bd6,
                         alt: "ladies",
                         style: "landscape",
                         featured: true,
-                    },
-                    {
-                        id: 7,
-                        src: two,
-                        alt: "two",  
-                        style: "landscape",
-                       
-                    },
-                    {
-                        id: 8,
-                        src: yasmin,
-                        alt: "yasmin",
-                        style: "landscape",
-
-                    },
+                    }
                 ]       
             },
            

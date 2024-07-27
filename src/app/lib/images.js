@@ -124,7 +124,7 @@ const images = {
         [
             {
                 name: "hilel" ,
-                order: 2,
+                order: 3,
               
                 images: [
                     {
@@ -138,7 +138,7 @@ const images = {
                         src: h2,
                         alt: "h2",
                         style: "landscape",
-                       
+                        featured: true,
                     },
                     {
                         id: 3,
@@ -174,7 +174,7 @@ const images = {
                         src: h7,
                         alt: "h7",
                         style: "landscape",
-                        featured: true,
+                       
                     },
                 ]
             },
@@ -293,7 +293,7 @@ const images = {
             },
             {
                 name: "wedding",
-                order: 4,
+                order: 5,
                 images: [
                     {
                         id: 1,
@@ -306,14 +306,14 @@ const images = {
                         src: wed2,
                         alt: "friends",
                         style: "landscape",
-                
+                        featured: true,
                     },
                     {
                         id: 3,
                         src: wed3,
                         alt: "fun",
                         style: "landscape",
-                     
+                       
         
                     },
                     {
@@ -321,6 +321,9 @@ const images = {
                         src: wed4,
                         alt: "mombaby",
                         style: "landscape",
+                        
+                        
+
                      
                     },
         
@@ -336,7 +339,7 @@ const images = {
                         src: wed6,
                         alt: "smile",
                         style: "landscape",
-                        featured: true,
+                        
                        
                     },
                     {
@@ -351,7 +354,7 @@ const images = {
             },
             {
                 name: "family",
-                order: 3,
+                order: 2,
                 featured: 3,
                 images: [
                     {
@@ -392,7 +395,7 @@ const images = {
             },
             {
                 name: "bd",
-                order: 5,
+                order: 4,
                 featured: 2,
                 images: [
                     {
@@ -405,6 +408,7 @@ const images = {
                         id: 2,
                         src: bd2,
                         alt: "flora",
+                        style: "landscape",
                        
                     },
             
@@ -412,6 +416,7 @@ const images = {
                         id: 3,
                         src: bd3,
                         alt: "girl",
+                        style: "landscape",
                       
                     },
                     {
@@ -419,11 +424,13 @@ const images = {
                         src: bd4,
                         alt: "girl2",
                         style: "landscape",
+                        featured: true,
                     },
                     {
                         id: 5,
                         src: bd5,
                         alt: "house",
+                        style: "landscape",
                        
                     },
                     {
@@ -431,7 +438,7 @@ const images = {
                         src: bd6,
                         alt: "ladies",
                         style: "landscape",
-                        featured: true,
+                      
                     }
                 ]       
             },

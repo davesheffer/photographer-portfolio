@@ -52,6 +52,8 @@ import bm6 from "/public/wg/bama/bama6.jpg";
 import bm7 from "/public/wg/bama/bama7.jpg";
 import bm8 from "/public/wg/bama/bama8.jpg";
 import bm9 from "/public/wg/bama/bama9.jpg";
+import bm10 from "/public/wg/bama/bama10.jpg";
+import bm11 from "/public/wg/bama/bama11.jpg";
 import fam1 from "/public/wg/family/fam1.jpg";
 import fam2 from "/public/wg/family/fam2.jpg";
 import fam4 from "/public/wg/family/fam4.jpg";
@@ -71,6 +73,15 @@ import bd3 from "/public/wg/bd/bd3.jpg";
 import bd4 from "/public/wg/bd/bd4.jpg";
 import bd5 from "/public/wg/bd/bd5.jpg";
 import bd6 from "/public/wg/bd/bd6.jpg";
+
+import gh1 from "/public/wg/gh/gh1.jpg";
+import gh2 from "/public/wg/gh/gh2.jpg";
+import gh3 from "/public/wg/gh/gh3.jpg";
+import gh4 from "/public/wg/gh/gh4.jpg";
+import gh5 from "/public/wg/gh/gh5.jpg";
+import gh6 from "/public/wg/gh/gh6.jpg";
+import gh7 from "/public/wg/gh/gh7.jpg";
+import gh8 from "/public/wg/gh/gh8.jpg";
 
 
 
@@ -125,7 +136,6 @@ const images = {
             {
                 name: "hilel" ,
                 order: 3,
-              
                 images: [
                     {
                         id: 1,
@@ -181,7 +191,7 @@ const images = {
             {
                 name: "friends",
                 order: 6,
-                featured: 2,
+              
                 images: [
                     {
                         id: 1,
@@ -226,7 +236,6 @@ const images = {
             {
                 name: "bama",
                 order: 1,
-               
                 images: [
                     {
                         id: 1,
@@ -262,7 +271,7 @@ const images = {
                         src: bm5,
                         alt: "mombaby",
                         style: "landscape",
-                        featured: true,
+                     
                     },
         
                     {
@@ -280,20 +289,35 @@ const images = {
                     {
                         id: 8,
                         src: bm8,
-                        alt: "smile",
+                        alt: "together",
                         style: "landscape",
                     },
                     {
                         id: 9,
                         src: bm9,
-                        alt: "smile",
+                        alt: "together",
+                        
+                    },
+                    {
+                        id: 10,
+                        src: bm10,
+                        alt: "together",
+                       
+                    },
+                    {
+                        id: 11,
+                        src: bm11,
+                        alt: "together",
                         style: "landscape",
                     },
+                  
+
+
                 ]
             },
             {
                 name: "wedding",
-                order: 5,
+                order: 7,
                 images: [
                     {
                         id: 1,
@@ -306,7 +330,6 @@ const images = {
                         src: wed2,
                         alt: "friends",
                         style: "landscape",
-                      
                     },
                     {
                         id: 3,
@@ -322,9 +345,6 @@ const images = {
                         alt: "mombaby",
                         style: "landscape",
                         
-                        
-
-                     
                     },
         
                     {
@@ -348,21 +368,20 @@ const images = {
                         src: wed7,
                         alt: "together",
                         style: "landscape",
-        
-        
                     },
                 ]
             },
             {
                 name: "family",
-                order: 2,
-                featured: 3,
+                order: 4,
+               
                 images: [
                     {
                         id: 1,
                         src: fam1,
                         alt: "bishof2",
-                        style: "landscape"
+                        style: "landscape",
+                        featured: true,
         
                     },
                     {
@@ -396,8 +415,8 @@ const images = {
             },
             {
                 name: "bd",
-                order: 4,
-                featured: 2,
+                order: 5,
+                
                 images: [
                     {
                         id: 1,
@@ -413,13 +432,7 @@ const images = {
                        
                     },
             
-                    {
-                        id: 3,
-                        src: bd3,
-                        alt: "girl",
-                        style: "landscape",
-                      
-                    },
+                  
                     {
                         id: 4,
                         src: bd4,
@@ -441,6 +454,70 @@ const images = {
                         style: "landscape",
                       
                     }
+                ]       
+            },
+            {
+                name: "gh",
+                order: 2,
+                images: [
+                    {
+                        id: 1,
+                        src: gh1,
+                        alt: "d",
+                        style: "landscape",
+                    },
+                    {
+                        id: 2,
+                        src: gh2,
+                        alt: "flora",
+                        style: "landscape",
+                       
+                    },
+            
+                  
+                    {
+                        id: 4,
+                        src: gh3,
+                        alt: "girl2",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 5,
+                        src: gh4,
+                        alt: "house",
+                        style: "landscape",
+                       
+                    },
+                    {
+                        id: 6,
+                        src: gh5,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    },
+                    {
+                        id: 7,
+                        src: gh6,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    },
+                    {
+                        id: 8,
+                        src: gh7,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    },
+                    {
+                        id: 9,
+                        src: gh8,
+                        alt: "ladies",
+                        style: "landscape",
+                    },
+
+                    
                 ]       
             },
            

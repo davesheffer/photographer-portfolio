@@ -83,6 +83,18 @@ import gh6 from "/public/wg/gh/gh6.jpg";
 import gh7 from "/public/wg/gh/gh7.jpg";
 import gh8 from "/public/wg/gh/gh8.jpg";
 
+import w1 from "/public/wg/water/w1.jpg";
+import w2 from "/public/wg/water/w2.jpg";
+import w3 from "/public/wg/water/w3.jpg";
+import w4 from "/public/wg/water/w4.jpg";
+import w5 from "/public/wg/water/w5.jpg";
+import w6 from "/public/wg/water/w6.jpg";
+import w7 from "/public/wg/water/w7.jpg";
+import w8 from "/public/wg/water/w8.jpg";
+import w9 from "/public/wg/water/w9.jpg";
+import w10 from "/public/wg/water/w10.jpg";
+import w11 from "/public/wg/water/w11.jpg";
+
 
 
 const images = {
@@ -135,7 +147,7 @@ const images = {
         [
             {
                 name: "hilel" ,
-                order: 3,
+                order: 7,
                 images: [
                     {
                         id: 1,
@@ -190,8 +202,7 @@ const images = {
             },
             {
                 name: "friends",
-                order: 6,
-              
+                order: 4,
                 images: [
                     {
                         id: 1,
@@ -317,7 +328,7 @@ const images = {
             },
             {
                 name: "wedding",
-                order: 7,
+                order: 3,
                 images: [
                     {
                         id: 1,
@@ -373,7 +384,7 @@ const images = {
             },
             {
                 name: "family",
-                order: 4,
+                order: 6,
                
                 images: [
                     {
@@ -416,7 +427,6 @@ const images = {
             {
                 name: "bd",
                 order: 5,
-                
                 images: [
                     {
                         id: 1,
@@ -456,9 +466,10 @@ const images = {
                     }
                 ]       
             },
+            
             {
                 name: "gh",
-                order: 2,
+                order: 9,
                 images: [
                     {
                         id: 1,
@@ -520,7 +531,69 @@ const images = {
                     
                 ]       
             },
-           
+            {
+                name: "water",
+                order: 2,
+                images: [
+                    {
+                        id: 8,
+                        src: w7,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    },
+                    {
+                        id: 9,
+                        src: w8,
+                        alt: "ladies",
+                        style: "landscape",
+                    },
+                    {
+                        id: 1,
+                        src: w1,
+                        alt: "tree",
+                        style: "landscape",
+                    },
+                    {
+                        id: 2,
+                        src: w2,
+                        alt: "flora",
+                        style: "landscape",
+                       
+                    },
+                    {
+                        id: 4,
+                        src: w3,
+                        alt: "dmp",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 5,
+                        src: w4,
+                        alt: "house",
+                        style: "landscape",
+                       
+                    },
+                    {
+                        id: 6,
+                        src: w5,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    },
+                    {
+                        id: 7,
+                        src: w6,
+                        alt: "ladies",
+                        style: "landscape",
+                      
+                    }
+                    
+
+                    
+                ]       
+            },
         ],
     ],
 };

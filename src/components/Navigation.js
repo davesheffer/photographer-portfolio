@@ -109,22 +109,14 @@ const Navigation = ({ amatic }) => {
                 >
                   בלוג
                 </Link>
-                <Link
-                  href="/contact"
-                  onClick={handleMenu}
-                  className={`text-black hover:text-rose-500 ${
-                    currentPath === "/contact" && "text-rose-500"
-                  }`}
-                >
-                  צור קשר
-                </Link>
+                
               </div>
             </div>
 
             <div id="contact-details" className="flex flex-col gap-2">
               <div className="flex flex-col">
                 <h2 className="text-rose-500">צרו קשר</h2>
-                <p>נייד: 052-1234567</p>
+                <p>נייד: <a href="https://wa.me/0522832144">0522832144</a></p>
                 <p>מייל:kuli.nof@gmail.com</p>
               </div>
               <div className="flex gap-8 *:text-2xl pb-10 *:text-rose-500">
@@ -179,21 +171,14 @@ const Navigation = ({ amatic }) => {
             >
               בלוג
             </Link>
-            <Link
-              href="/contact"
-              className={`text-black hover:text-rose-500 ${
-                currentPath === "/contact" && "text-rose-500"
-              }`}
-            >
-              צור קשר
-            </Link>
+            
           </div>
         </div>
         <div id="contact-details" className="flex flex-col gap-2">
           <div className="flex flex-col gap-2">
             <h2 className="text-rose-500 text-xl">צרו קשר</h2>
             <div>
-              <p>נייד: 052-2832144</p>
+              <p>נייד: <a href="https://wa.me/0522832144">0522832144</a></p>
               <p>מייל:kuli.nof@gmail.com</p>
             </div>
           </div>

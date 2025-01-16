@@ -82,11 +82,6 @@ const images = {
             alt: "pole",
         },
         {
-            id: 2,
-            src: Slider_2,
-            alt: "eyal",
-        },
-        {
             id: 3,
             src: Slider_3,
             alt: "yam",

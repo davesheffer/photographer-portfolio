@@ -119,7 +119,7 @@ const images = {
         }, 
         {
             id: 3,
-            src: gh2,
+            src: gh1,
             alt: "chickgav",
         },
         {

@@ -105,17 +105,19 @@ const images = {
             src: Slider_5,
             alt: "pole",
         },
+
         {
             id: 1,
             src: Slider_1,
-            alt: "main",
+            alt: "noam",
         },
 
         {
             id: 3,
             src: Slider_3,
-            alt: "eyal",
+            alt: "yam",
         }, 
+      
         {
             id: 7,
             src: two,
@@ -127,10 +129,10 @@ const images = {
             alt: "friendBM", 
         },
         {
-            id: 7,
-            src: yael,
-            alt: "two", 
-        }
+            id: 3,
+            src: h2,
+            alt: "shlomitbrit",
+        }, 
     ],
     people: [
         [

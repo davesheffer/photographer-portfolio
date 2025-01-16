@@ -101,6 +101,11 @@ const images = {
    
     slider: [
         {
+            id: 5,
+            src: Slider_5,
+            alt: "pole",
+        },
+        {
             id: 1,
             src: Slider_1,
             alt: "main",
@@ -110,24 +115,16 @@ const images = {
             id: 3,
             src: Slider_3,
             alt: "eyal",
-        },
-
-        
-        {
-            id: 5,
-            src: Slider_5,
-            alt: "diz",
-        },
-        {
-            id: 6,
-            src: Slider_6,
-            alt: "chair",
-        },
-       
+        }, 
         {
             id: 7,
             src: two,
             alt: "two", 
+        },
+        {
+            id: 7,
+            src: bm6,
+            alt: "friendBM", 
         },
         {
             id: 7,

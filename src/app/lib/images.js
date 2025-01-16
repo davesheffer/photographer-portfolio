@@ -87,11 +87,7 @@ import w11 from "/public/wg/water/w11.jpg";
 const images = {
    
     slider: [
-        {
-            id: 1,
-            src: Slider_1,
-            alt: "main",
-        },
+      
         {
             id: 2,
             src: Slider_2,

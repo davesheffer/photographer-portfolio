@@ -6,7 +6,7 @@ import Slider_3 from "/public/slider/yam.png";
 import Slider_4 from "/public/slider/seder.jpg";
 import Slider_5 from "/public/slider/polle.jpg";
 import Slider_6 from "/public/slider/diz.jpg";
-import Slider_7 from "/public/slider/chair.png";
+
 
 // Community Images
 import yael from "/public/wg/family/fam5.jpg";
@@ -127,11 +127,7 @@ const images = {
             src: Slider_6,
             alt: "chair",
         },
-        {
-            id: 7,
-            src: Slider_7,
-            alt: "yam",
-        },
+        
         {
             id: 7,
             src: two,

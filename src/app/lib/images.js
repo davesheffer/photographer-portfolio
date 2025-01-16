@@ -1,20 +1,9 @@
 // Silder Images
 
-import Slider_1 from "/public/slider/main.png";
 import Slider_2 from "/public/slider/eyal.jpg";
 import Slider_3 from "/public/slider/yam.png";
 import Slider_5 from "/public/slider/polle.jpg";
-import Slider_6 from "/public/slider/diz.jpg";
-import two from "/public/art/two.jpg";
-
-// Community Images
 import yael from "/public/wg/family/fam5.jpg";
-
-
-// Art Images
-
-
-
 
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
@@ -87,28 +76,22 @@ import w11 from "/public/wg/water/w11.jpg";
 const images = {
    
     slider: [
-      
+        {
+            id: 5,
+            src: Slider_5,
+            alt: "pole",
+        },
         {
             id: 2,
             src: Slider_2,
-            alt: "pole",
+            alt: "eyal",
         },
         {
             id: 3,
             src: Slider_3,
-            alt: "eyal",
+            alt: "yam",
         },
-        {
-            id: 5,
-            src: Slider_5,
-            alt: "diz",
-        },
-        {
-            id: 6,
-            src: Slider_6,
-            alt: "chair",
-        },
-        
+       
         {
             id: 7,
             src: yael,

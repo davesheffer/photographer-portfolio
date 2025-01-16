@@ -3,31 +3,18 @@
 import Slider_1 from "/public/slider/main.png";
 import Slider_2 from "/public/slider/eyal.jpg";
 import Slider_3 from "/public/slider/yam.png";
-import Slider_4 from "/public/slider/seder.jpg";
 import Slider_5 from "/public/slider/polle.jpg";
 import Slider_6 from "/public/slider/diz.jpg";
-
+import two from "/public/art/two.jpg";
 
 // Community Images
 import yael from "/public/wg/family/fam5.jpg";
-import bishof2 from "/public/com/bishof2.jpg";
-import friends from "/public/com/friends.jpg";
-import fun from "/public/com/fun.jpg";
-import mombaby from "/public/com/mombaby.jpg";
-import shlomit from "/public/com/shlomit.jpg";
-import smile from "/public/com/smile.jpg";
-import stand from "/public/com/stand.jpg";
-import together from "/public/com/together.jpg";
+
 
 // Art Images
-import d from "/public/art/d.jpg";
-import flora from "/public/art/flora.jpg";
-import girl from "/public/art/girl.jpg";
-import girl2 from "/public/art/girl2.jpg";
-import house from "/public/art/house.jpg";
-import ladies from "/public/art/ladies.jpg";
-import two from "/public/art/two.jpg";
-import yasmin from "/public/art/yasmin.jpg";
+
+
+
 
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
@@ -115,8 +102,6 @@ const images = {
             src: Slider_3,
             alt: "eyal",
         },
-
-        
         {
             id: 5,
             src: Slider_5,
@@ -128,11 +113,6 @@ const images = {
             alt: "chair",
         },
         
-        {
-            id: 7,
-            src: two,
-            alt: "two", 
-        },
         {
             id: 7,
             src: yael,

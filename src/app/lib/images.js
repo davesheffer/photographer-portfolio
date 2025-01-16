@@ -86,6 +86,11 @@ const images = {
             src: Slider_3,
             alt: "yam",
         },
+        {
+            id: 3,
+            src: bm6,
+            alt: "friends_bm",
+        },
        
         {
             id: 7,

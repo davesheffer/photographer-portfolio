@@ -214,6 +214,7 @@ const images = {
                         src: f3,
                         alt: "smile",
                         style: "landscape",
+                        featured: true,
                        
         
                     },
@@ -230,7 +231,7 @@ const images = {
                         src: f5,
                         alt: "shlomit",
                         style: "landscape",
-                        featured: true,
+                     
                     },
                 ]
             },

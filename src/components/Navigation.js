@@ -133,19 +133,19 @@ const Navigation = ({ amatic }) => {
           <Link className="flex gap-4 items-center relative" href="/">
             <Image
               src={logo}
-              className="App-logo w-auto h-14"
+              className="App-logo w-auto h-16"
               alt="logo"
-              width={20}
-              height={20}
+              width={50}
+              height={50}
             />
             <div>
               <h1 className={`font-amatic text-4xl ${amatic.className}`}>
                 נופר שפר
               </h1>
-            
+          
             </div>
           </Link>
-          <div className="flex flex-col gap-6 text-md">
+          <div className="flex flex-col gap-6 text-MD">
             <Link
               href="/"
               className={`text-black hover:text-rose-500 ${

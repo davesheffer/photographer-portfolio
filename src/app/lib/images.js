@@ -128,11 +128,6 @@ const images = {
             alt: "two", 
         },
         {
-            id: 7,
-            src: bm6,
-            alt: "friendBM", 
-        },
-        {
             id: 3,
             src: h2,
             alt: "shlomitbrit",

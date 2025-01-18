@@ -41,7 +41,7 @@ const Navigation = ({ amatic }) => {
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
               נופר שפר
             </h1>
-            <h3 >צלמת ואמנית ויזואלית</h3>
+          
             </div>
           </Link>
         </div>
@@ -74,9 +74,9 @@ const Navigation = ({ amatic }) => {
                   />
                   <div>
                     <h1 className={`font-amatic text-3xl ${amatic.className}`}>
-                      נופר שפר
+                       נופר שפר
                     </h1>
-                    <h3>צלמת ואמנית ויזואלית</h3>
+                
                   </div>
                 </Link>
               </div>
@@ -133,19 +133,19 @@ const Navigation = ({ amatic }) => {
           <Link className="flex gap-4 items-center relative" href="/">
             <Image
               src={logo}
-              className="App-logo w-auto h-16"
+              className="App-logo w-auto h-14"
               alt="logo"
-              width={50}
-              height={50}
+              width={20}
+              height={20}
             />
             <div>
-              <h1 className={`font-amatic text-6xl ${amatic.className}`}>
+              <h1 className={`font-amatic text-4xl ${amatic.className}`}>
                 נופר שפר
               </h1>
-              <h3 className="text-md">צלמת ואמנית ויזואלית</h3>
+            
             </div>
           </Link>
-          <div className="flex flex-col gap-6 text-xl">
+          <div className="flex flex-col gap-6 text-md">
             <Link
               href="/"
               className={`text-black hover:text-rose-500 ${

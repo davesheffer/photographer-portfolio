@@ -98,7 +98,7 @@ import w11 from "/public/wg/water/w11.jpg";
 
 
 const images = {
-   
+
     slider: [
         {
             id: 5,
@@ -116,7 +116,7 @@ const images = {
             id: 3,
             src: Slider_3,
             alt: "yam",
-        }, 
+        },
         {
             id: 3,
             src: gh1,
@@ -125,19 +125,19 @@ const images = {
         {
             id: 7,
             src: two,
-            alt: "two", 
+            alt: "two",
         },
         {
             id: 3,
             src: h2,
             alt: "shlomitbrit",
-        }, 
+        },
     ],
     people: [
         [
             {
                 name: "hilel" ,
-                order: 7,
+                order: 3,
                 images: [
                     {
                         id: 1,
@@ -157,36 +157,36 @@ const images = {
                         src: h3,
                         alt: "h3",
                         style: "landscape",
-                        
-        
+
+
                     },
                     {
                         id: 4,
                         src: h4,
                         alt: "h4",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 5,
                         src: h5,
                         alt: "h5",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 6,
                         src: h6,
                         alt: "h6",
                         style: "landscape",
-                        
+
                     },
                     {
                         id: 7,
                         src: h7,
                         alt: "h7",
                         style: "landscape",
-                       
+
                     },
                 ]
             },
@@ -199,15 +199,15 @@ const images = {
                         src: f1,
                         alt: "group",
                         style: "landscape",
-                        
-        
+
+
                     },
                     {
                         id: 2,
                         src: f2,
                         alt: "twomen",
                         style: "landscape",
-                        
+
                     },
                     {
                         id: 3,
@@ -215,43 +215,43 @@ const images = {
                         alt: "smile",
                         style: "landscape",
                         featured: true,
-                       
-        
+
+
                     },
                     {
                         id: 4,
                         src: f4,
                         alt: "mombaby",
                         style: "landscape",
-                        
+
                     },
-        
+
                     {
                         id: 5,
                         src: f5,
                         alt: "shlomit",
                         style: "landscape",
-                     
+
                     },
                 ]
             },
             {
                 name: "bama",
-                order: 1,
+                order: 6,
                 images: [
                     {
                         id: 1,
                         src: bm1,
                         alt: "bishof2",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 2,
                         src: bm2,
                         alt: "friends",
-                       
-                       
+
+
                     },
                     {
                         id: 3,
@@ -260,27 +260,27 @@ const images = {
                         style: "landscape",
                         featured: true,
                     },
-        
+
                     {
                         id: 4,
                         src: bm4,
                         alt: "mombaby",
                         style: "landscape",
                     },
-        
+
                     {
                         id: 5,
                         src: bm5,
                         alt: "mombaby",
                         style: "landscape",
-                     
+
                     },
-        
+
                     {
                         id: 6,
                         src: bm6,
                         alt: "shlomit",
-        
+
                     },
                     {
                         id: 7,
@@ -298,13 +298,13 @@ const images = {
                         id: 9,
                         src: bm9,
                         alt: "together",
-                        
+
                     },
                     {
                         id: 10,
                         src: bm10,
                         alt: "together",
-                       
+
                     },
                     {
                         id: 11,
@@ -312,20 +312,20 @@ const images = {
                         alt: "together",
                         style: "landscape",
                     },
-                  
+
 
 
                 ]
             },
             {
                 name: "wedding",
-                order: 3,
+                order: 5,
                 images: [
                     {
                         id: 1,
                         src: wed1,
                         alt: "",
-                      
+
                     },
                     {
                         id: 2,
@@ -338,32 +338,32 @@ const images = {
                         src: wed3,
                         alt: "fun",
                         style: "landscape",
-                       
-        
+
+
                     },
                     {
                         id: 4,
                         src: wed4,
                         alt: "mombaby",
                         style: "landscape",
-                        
+
                     },
-        
+
                     {
                         id: 5,
                         src: wed5,
                         alt: "shlomit",
                         style: "landscape",
                         featured: true,
-                      
+
                     },
                     {
                         id: 6,
                         src: wed6,
                         alt: "smile",
                         style: "landscape",
-                        
-                       
+
+
                     },
                     {
                         id: 7,
@@ -375,8 +375,8 @@ const images = {
             },
             {
                 name: "family",
-                order: 6,
-               
+                order: 2,
+
                 images: [
                     {
                         id: 1,
@@ -384,7 +384,7 @@ const images = {
                         alt: "bishof2",
                         style: "landscape",
                         featured: true,
-        
+
                     },
                     {
                         id: 3,
@@ -403,21 +403,21 @@ const images = {
                         src: fam5,
                         alt: "mombaby",
                         style: "landscape",
-                       
+
                     },
-        
+
                     {
                         id: 7,
                         src: fam6,
                         alt: "shlomit",
                         style: "landscape",
-                        
+
                     }
                 ]
             },
             {
                 name: "bd",
-                order: 5,
+                order: 1,
                 images: [
                     {
                         id: 1,
@@ -430,10 +430,10 @@ const images = {
                         src: bd2,
                         alt: "flora",
                         style: "landscape",
-                       
+
                     },
-            
-                  
+
+
                     {
                         id: 4,
                         src: bd4,
@@ -446,18 +446,18 @@ const images = {
                         src: bd5,
                         alt: "house",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 6,
                         src: bd6,
                         alt: "ladies",
                         style: "landscape",
-                      
+
                     }
-                ]       
+                ]
             },
-            
+
             // {
             //     name: "gh",
             //     order: 9,
@@ -473,10 +473,10 @@ const images = {
             //             src: gh2,
             //             alt: "flora",
             //             style: "landscape",
-                       
+
             //         },
-            
-                  
+
+
             //         {
             //             id: 4,
             //             src: gh3,
@@ -489,28 +489,28 @@ const images = {
             //             src: gh4,
             //             alt: "house",
             //             style: "landscape",
-                       
+
             //         },
             //         {
             //             id: 6,
             //             src: gh5,
             //             alt: "ladies",
             //             style: "landscape",
-                      
+
             //         },
             //         {
             //             id: 7,
             //             src: gh6,
             //             alt: "ladies",
             //             style: "landscape",
-                      
+
             //         },
             //         {
             //             id: 8,
             //             src: gh7,
             //             alt: "ladies",
             //             style: "landscape",
-                      
+
             //         },
             //         {
             //             id: 9,
@@ -519,19 +519,19 @@ const images = {
             //             style: "landscape",
             //         },
 
-                    
-            //     ]       
+
+            //     ]
             // },
             {
                 name: "water",
-                order: 2,
+                order: 4,
                 images: [
                     {
                         id: 8,
                         src: w7,
                         alt: "ladies",
                         style: "landscape",
-                      
+
                     },
                     {
                         id: 9,
@@ -550,7 +550,7 @@ const images = {
                         src: w2,
                         alt: "flora",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 4,
@@ -564,26 +564,26 @@ const images = {
                         src: w4,
                         alt: "house",
                         style: "landscape",
-                       
+
                     },
                     {
                         id: 6,
                         src: w5,
                         alt: "ladies",
                         style: "landscape",
-                      
+
                     },
                     {
                         id: 7,
                         src: w6,
                         alt: "ladies",
                         style: "landscape",
-                      
-                    }
-                    
 
-                    
-                ]       
+                    }
+
+
+
+                ]
             },
         ],
     ],

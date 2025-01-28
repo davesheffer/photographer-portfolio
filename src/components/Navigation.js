@@ -19,7 +19,7 @@ const Navigation = ({ amatic }) => {
   };
   return (
     <>
-      <header className=" shadow-lg lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10">
+      <header className=" shadow-lg  opacity-95  lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10 ">
         <div className="px-4 flex items-center gap-4">
           {!isMenuOpen && (
             <CiMenuFries
@@ -41,7 +41,7 @@ const Navigation = ({ amatic }) => {
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
               נופר שפר
             </h1>
-          
+
             </div>
           </Link>
         </div>
@@ -76,7 +76,7 @@ const Navigation = ({ amatic }) => {
                     <h1 className={`font-amatic text-3xl ${amatic.className}`}>
                        נופר שפר
                     </h1>
-                
+
                   </div>
                 </Link>
               </div>
@@ -99,7 +99,7 @@ const Navigation = ({ amatic }) => {
                 >
                   גלריות
                 </Link>
-                
+
                 <Link
                   href="/blog"
                   onClick={handleMenu}
@@ -109,7 +109,7 @@ const Navigation = ({ amatic }) => {
                 >
                   בלוג
                 </Link>
-                
+
               </div>
             </div>
 
@@ -142,7 +142,7 @@ const Navigation = ({ amatic }) => {
               <h1 className={`font-amatic text-4xl ${amatic.className}`}>
                 נופר שפר
               </h1>
-          
+
             </div>
           </Link>
           <div className="flex flex-col gap-6 text-MD">
@@ -162,7 +162,7 @@ const Navigation = ({ amatic }) => {
             >
               גלריות
             </Link>
-            
+
             <Link
               href="/blog"
               className={`text-black hover:text-rose-500 ${
@@ -171,7 +171,7 @@ const Navigation = ({ amatic }) => {
             >
               בלוג
             </Link>
-            
+
           </div>
         </div>
         <div id="contact-details" className="flex flex-col gap-2">

@@ -159,7 +159,7 @@ const images = {
             },
             {
                 name: "friends",
-                order: 4,
+                order: 6,
                 images: [
                     {
                         id: 1,
@@ -203,7 +203,7 @@ const images = {
             },
             {
                 name: "bama",
-                order: 6,
+                order: 7,
                 images: [
                     {
                         id: 1,
@@ -263,13 +263,13 @@ const images = {
                     {
                         id: 9,
                         src: bm9,
-                        alt: "together",
+                        alt: "eyr",
 
                     },
                     {
                         id: 10,
                         src: bm10,
-                        alt: "together",
+                        alt: "das",
 
                     },
                     {
@@ -278,8 +278,6 @@ const images = {
                         alt: "together",
                         style: "landscape",
                     },
-
-
 
                 ]
             },
@@ -422,71 +420,6 @@ const images = {
                     }
                 ]
             },
-
-            // {
-            //     name: "gh",
-            //     order: 9,
-            //     images: [
-            //         {
-            //             id: 1,
-            //             src: gh1,
-            //             alt: "d",
-            //             style: "landscape",
-            //         },
-            //         {
-            //             id: 2,
-            //             src: gh2,
-            //             alt: "flora",
-            //             style: "landscape",
-
-            //         },
-
-
-            //         {
-            //             id: 4,
-            //             src: gh3,
-            //             alt: "girl2",
-            //             style: "landscape",
-            //             featured: true,
-            //         },
-            //         {
-            //             id: 5,
-            //             src: gh4,
-            //             alt: "house",
-            //             style: "landscape",
-
-            //         },
-            //         {
-            //             id: 6,
-            //             src: gh5,
-            //             alt: "ladies",
-            //             style: "landscape",
-
-            //         },
-            //         {
-            //             id: 7,
-            //             src: gh6,
-            //             alt: "ladies",
-            //             style: "landscape",
-
-            //         },
-            //         {
-            //             id: 8,
-            //             src: gh7,
-            //             alt: "ladies",
-            //             style: "landscape",
-
-            //         },
-            //         {
-            //             id: 9,
-            //             src: gh8,
-            //             alt: "ladies",
-            //             style: "landscape",
-            //         },
-
-
-            //     ]
-            // },
             {
                 name: "water",
                 order: 4,

@@ -37,6 +37,7 @@ const GalleryMulti = ({ gallery }) => {
             {showGallery && (
                 <GalleryMultiLightbox
                     selectedLightbox={selectedLightbox}
+                    showGallery={showGallery}
                     setShowGallery={setShowGallery}
                     realIndex={realIndexes[selectedLightbox?.[0]?.id] || 0} // Pass the correct realIndex
                 />

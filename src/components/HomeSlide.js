@@ -6,7 +6,7 @@ const HomeSlide = ({image}) => {
         <div
             className="flex text-white items-end justify-start bg-no-repeat h-[80vh] w-[80vw] bg-cover bg-center"
             >
-            <Image src={image.src}  alt={image.alt} fill={true} className="object-cover object-center"/>       
+            <Image src={image.src} quality={100}  alt={image.alt} fill={true} className="object-cover object-center"/>
         </div>
     )
 }

@@ -6,11 +6,13 @@ import GalleryMultiLightboxSilde from "./GalleryMultiLightboxSilde";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
-const GalleryMultiLightbox = ({ selectedLightbox, setShowGallery, realIndex }) => {
+const GalleryMultiLightbox = ({ selectedLightbox, showGallery, setShowGallery, realIndex }) => {
     const swiperRef = useRef(null);
 
     return (
-        <div className="fixed top-0 right-0 h-full w-full bg-black z-20">
+        <div
+            className={`fixed top-0 right-0 h-full w-full bg-black z-20 transition-opacity duration-500 ease-in-out ${showGallery ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        >
             <IoClose
                 className="text-white md:text-6xl text-3xl absolute md:right-10 md:top-10 right-5 top-5 z-10 cursor-pointer"
                 onClick={() => setShowGallery(false)}
@@ -24,10 +26,10 @@ const GalleryMultiLightbox = ({ selectedLightbox, setShowGallery, realIndex }) =
                 autoplay={{ delay: 3000, disableOnInteraction: false }}
                 effect="fade"
                 fadeEffect={{ crossFade: true }}
-                initialSlide={selectedLightbox[realIndex]} // Set the initial slide directly
+                initialSlide={selectedLightbox[realIndex]}
             >
                 {selectedLightbox
-                    .slice() // Clone the array to prevent mutations
+                    .slice()
                     .sort((a, b) => b.id - a.id)
                     .map((image, index) => (
                         <SwiperSlide key={image.id}>

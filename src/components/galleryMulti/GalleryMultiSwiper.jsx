@@ -11,17 +11,17 @@ const getFilteredImages = (gallery) => {
         .sort((a, b) => a.order - b.order); // Ensure images are sorted in ascending order
 };
 
-const GalleryMultiSwiper = ({ galleries,handleImageClick}) => {
+const GalleryMultiSwiper = ({ galleries,handleImageClick,setRealIndex}) => {
     // Sort galleries by their order property
     const sortedGalleries = galleries.sort((a, b) => a.order - b.order);
-
+ 
     return (
         <>
           {sortedGalleries.map((gallery, galleryIndex) => {
                 const filteredImages = getFilteredImages(gallery);
-                console.log("filteredImages", filteredImages);
+           
                 const initialSlideIndex = filteredImages.findIndex(image => image.featured);
-
+                
                 return (
                     <Swiper
                         key={galleryIndex}
@@ -31,6 +31,7 @@ const GalleryMultiSwiper = ({ galleries,handleImageClick}) => {
                         loop={true}
                         effect={"fade"}
                         onClick={() => handleImageClick(gallery.images)}
+                        onSlideChange={(swiper) => setRealIndex(swiper.realIndex)}
                         initialSlide={initialSlideIndex}
                         fadeEffect={{ crossFade: true }}
                     >

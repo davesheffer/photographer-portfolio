@@ -23,7 +23,7 @@ const GalleryRegularLightbox = ({ images, setShowGallery, setSelectedImage, sele
                 effect={"fade"}
                 initialSlide={selectedImage}
                 fadeEffect={{ crossFade: true }}
-                onSlideChange={() => console.log("slide change")}
+             
                 onSwiper={(swiper) => console.log(swiper)}>
                 {images.map((image, index) => (
                     <SwiperSlide key={index}>

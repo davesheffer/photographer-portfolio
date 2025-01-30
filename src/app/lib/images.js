@@ -1,34 +1,11 @@
 // Silder Images
 
-import Slider_1 from "/public/slider/main.png";
-import Slider_2 from "/public/slider/eyal.jpg";
 import Slider_3 from "/public/slider/yam.png";
-import Slider_4 from "/public/slider/seder.jpg";
 import Slider_5 from "/public/slider/polle.jpg";
-import Slider_6 from "/public/slider/diz.jpg";
-import Slider_7 from "/public/slider/chair.png";
-
-// Community Images
-import yael from "/public/wg/family/fam5.jpg";
-import bishof2 from "/public/com/bishof2.jpg";
-import friends from "/public/com/friends.jpg";
-import fun from "/public/com/fun.jpg";
-import mombaby from "/public/com/mombaby.jpg";
-import shlomit from "/public/com/shlomit.jpg";
-import smile from "/public/com/smile.jpg";
-import stand from "/public/com/stand.jpg";
-import together from "/public/com/together.jpg";
 
 // Art Images
-import d from "/public/art/d.jpg";
-import flora from "/public/art/flora.jpg";
-import girl from "/public/art/girl.jpg";
-import girl2 from "/public/art/girl2.jpg";
-import house from "/public/art/house.jpg";
-import ladies from "/public/art/ladies.jpg";
 import two from "/public/art/two.jpg";
-import yasmin from "/public/art/yasmin.jpg";
-
+import gh1 from "/public/wg/gh/gh1.jpg";
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
 import h2 from "/public/wg/h/h2.jpg";
@@ -43,6 +20,7 @@ import f2 from "/public/wg/friends/f2.jpg";
 import f3 from "/public/wg/friends/f3.jpg";
 import f4 from "/public/wg/friends/f4.jpg";
 import f5 from "/public/wg/friends/f5.jpg";
+
 import bm1 from "/public/wg/bama/bama1.jpg";
 import bm2 from "/public/wg/bama/bama2.jpg";
 import bm3 from "/public/wg/bama/bama3.jpg";
@@ -54,11 +32,13 @@ import bm8 from "/public/wg/bama/bama8.jpg";
 import bm9 from "/public/wg/bama/bama9.jpg";
 import bm10 from "/public/wg/bama/bama10.jpg";
 import bm11 from "/public/wg/bama/bama11.jpg";
+
 import fam1 from "/public/wg/family/fam1.jpg";
 import fam2 from "/public/wg/family/fam2.jpg";
 import fam4 from "/public/wg/family/fam4.jpg";
 import fam5 from "/public/wg/family/fam5.jpg";
 import fam6 from "/public/wg/family/fam6.jpg";
+
 import wed1 from "/public/wg/wedding/wed1.jpg";
 import wed2 from "/public/wg/wedding/wed2.jpg";
 import wed3 from "/public/wg/wedding/wed3.jpg";
@@ -69,19 +49,10 @@ import wed7 from "/public/wg/wedding/wed7.jpg";
 
 import bd1 from "/public/wg/bd/bd1.jpg";
 import bd2 from "/public/wg/bd/bd2.jpg";
-import bd3 from "/public/wg/bd/bd3.jpg";
+
 import bd4 from "/public/wg/bd/bd4.jpg";
 import bd5 from "/public/wg/bd/bd5.jpg";
 import bd6 from "/public/wg/bd/bd6.jpg";
-
-import gh1 from "/public/wg/gh/gh1.jpg";
-import gh2 from "/public/wg/gh/gh2.jpg";
-import gh3 from "/public/wg/gh/gh3.jpg";
-import gh4 from "/public/wg/gh/gh4.jpg";
-import gh5 from "/public/wg/gh/gh5.jpg";
-import gh6 from "/public/wg/gh/gh6.jpg";
-import gh7 from "/public/wg/gh/gh7.jpg";
-import gh8 from "/public/wg/gh/gh8.jpg";
 
 import w1 from "/public/wg/water/w1.jpg";
 import w2 from "/public/wg/water/w2.jpg";
@@ -91,9 +62,6 @@ import w5 from "/public/wg/water/w5.jpg";
 import w6 from "/public/wg/water/w6.jpg";
 import w7 from "/public/wg/water/w7.jpg";
 import w8 from "/public/wg/water/w8.jpg";
-import w9 from "/public/wg/water/w9.jpg";
-import w10 from "/public/wg/water/w10.jpg";
-import w11 from "/public/wg/water/w11.jpg";
 
 
 
@@ -108,7 +76,7 @@ const images = {
 
         {
             id: 1,
-            src: Slider_1,
+            src: f3,
             alt: "noam",
         },
 

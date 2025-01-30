@@ -10,12 +10,11 @@ import GalleryMultiSwiper from "./GalleryMultiSwiper";
 
 
 const GalleryMulti = ({ gallery }) => {
-
+    
     const [showGallery, setShowGallery] = useState(false)
     const [selectedLightbox, setSelectedLightbox] = useState(null);
-
+    const [realIndex, setRealIndex] = useState(0);
     const handleImageClick = (galleries) => {
-        console.log("galleries", galleries)
         setSelectedLightbox(galleries);
         setShowGallery(true)
     }
@@ -23,10 +22,10 @@ const GalleryMulti = ({ gallery }) => {
     return (
         <div className="md:columns-2 columns-1" dir="ltr">
             {images[gallery].map(( galleries, index) => (
-             <GalleryMultiSwiper key={index} galleries={galleries} handleImageClick={handleImageClick} />
+             <GalleryMultiSwiper key={index} galleries={galleries} handleImageClick={handleImageClick} setRealIndex={setRealIndex}/>
             ))}
             {showGallery && (
-                <GalleryMultiLightbox selectedLightbox={selectedLightbox} setShowGallery={setShowGallery} />
+                <GalleryMultiLightbox selectedLightbox={selectedLightbox} setShowGallery={setShowGallery} realIndex={realIndex} setRealIndex={setRealIndex}  />
             )}
         </div>
     );

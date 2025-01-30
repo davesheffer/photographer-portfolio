@@ -109,24 +109,23 @@ const images = {
                 images: [
                     {
                         id: 1,
-                        src: h1,
-                        alt: "h1",
-                        style: "landscape",
-                    },
-                    {
-                        id: 2,
                         src: h2,
                         alt: "h2",
                         style: "landscape",
                         featured: true,
                     },
                     {
+                        id: 2,
+                        src: h1,
+                        alt: "h1",
+                        style: "landscape",
+                    },
+
+                    {
                         id: 3,
                         src: h3,
                         alt: "h3",
                         style: "landscape",
-
-
                     },
                     {
                         id: 4,
@@ -164,6 +163,13 @@ const images = {
                 images: [
                     {
                         id: 1,
+                        src: f3,
+                        alt: "smile",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 2,
                         src: f1,
                         alt: "group",
                         style: "landscape",
@@ -171,21 +177,13 @@ const images = {
 
                     },
                     {
-                        id: 2,
+                        id: 3,
                         src: f2,
                         alt: "twomen",
                         style: "landscape",
 
                     },
-                    {
-                        id: 3,
-                        src: f3,
-                        alt: "smile",
-                        style: "landscape",
-                        featured: true,
 
-
-                    },
                     {
                         id: 4,
                         src: f4,
@@ -209,26 +207,26 @@ const images = {
                 images: [
                     {
                         id: 1,
-                        src: bm1,
-                        alt: "bishof2",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 2,
-                        src: bm2,
-                        alt: "friends",
-
-
-                    },
-                    {
-                        id: 3,
                         src: bm3,
                         alt: "fun",
                         style: "landscape",
                         featured: true,
                     },
 
+                    {
+                        id: 2,
+                        src: bm1,
+                        alt: "bishof2",
+                        style: "landscape",
+
+                    },
+                    {
+                        id: 3,
+                        src: bm2,
+                        alt: "friends",
+
+
+                    },
                     {
                         id: 4,
                         src: bm4,
@@ -291,18 +289,26 @@ const images = {
                 images: [
                     {
                         id: 1,
+                        src: wed5,
+                        alt: "shlomit",
+                        style: "landscape",
+                        featured: true,
+
+                    },
+                    {
+                        id: 2,
                         src: wed1,
                         alt: "",
 
                     },
                     {
-                        id: 2,
+                        id: 3,
                         src: wed2,
                         alt: "friends",
                         style: "landscape",
                     },
                     {
-                        id: 3,
+                        id: 4,
                         src: wed3,
                         alt: "fun",
                         style: "landscape",
@@ -310,21 +316,14 @@ const images = {
 
                     },
                     {
-                        id: 4,
+                        id: 5,
                         src: wed4,
                         alt: "mombaby",
                         style: "landscape",
 
                     },
 
-                    {
-                        id: 5,
-                        src: wed5,
-                        alt: "shlomit",
-                        style: "landscape",
-                        featured: true,
 
-                    },
                     {
                         id: 6,
                         src: wed6,
@@ -394,7 +393,6 @@ const images = {
                         style: "landscape",
                         featured: true,
                     },
-
                     {
                         id: 2,
                         src: bd2,
@@ -494,33 +492,33 @@ const images = {
                 order: 4,
                 images: [
                     {
-                        id: 4,
+                        id: 1,
                         src: w3,
                         alt: "dmp",
                         style: "landscape",
                         featured: true,
                     },
                     {
-                        id: 8,
+                        id: 2,
                         src: w7,
                         alt: "ladies",
                         style: "landscape",
 
                     },
                     {
-                        id: 9,
+                        id: 3,
                         src: w8,
                         alt: "ladies",
                         style: "landscape",
                     },
                     {
-                        id: 1,
+                        id: 4,
                         src: w1,
                         alt: "tree",
                         style: "landscape",
                     },
                     {
-                        id: 2,
+                        id: 5,
                         src: w2,
                         alt: "flora",
                         style: "landscape",
@@ -528,21 +526,21 @@ const images = {
                     },
 
                     {
-                        id: 5,
+                        id: 6,
                         src: w4,
                         alt: "house",
                         style: "landscape",
 
                     },
                     {
-                        id: 6,
+                        id: 7,
                         src: w5,
                         alt: "ladies",
                         style: "landscape",
 
                     },
                     {
-                        id: 7,
+                        id: 8,
                         src: w6,
                         alt: "ladies",
                         style: "landscape",

@@ -221,13 +221,6 @@ const images = {
 
                     },
                     {
-                        id: 3,
-                        src: bm2,
-                        alt: "friends",
-
-
-                    },
-                    {
                         id: 4,
                         src: bm4,
                         alt: "mombaby",
@@ -241,13 +234,6 @@ const images = {
                         style: "landscape",
 
                     },
-
-                    {
-                        id: 6,
-                        src: bm6,
-                        alt: "shlomit",
-
-                    },
                     {
                         id: 7,
                         src: bm7,
@@ -259,18 +245,6 @@ const images = {
                         src: bm8,
                         alt: "together",
                         style: "landscape",
-                    },
-                    {
-                        id: 9,
-                        src: bm9,
-                        alt: "eyr",
-
-                    },
-                    {
-                        id: 10,
-                        src: bm10,
-                        alt: "das",
-
                     },
                     {
                         id: 11,

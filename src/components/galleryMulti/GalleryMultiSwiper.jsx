@@ -8,23 +8,19 @@ import GalleryMultiSlide from "../galleryMulti/GalleryMultiSlide";
 const getFilteredImages = (gallery) => {
     return gallery.images
         .filter(image => image.style === "landscape")
-        .sort((a, b) => a.order - b.order); // Ensure images are sorted in ascending order
+
 };
 
-const GalleryMultiSwiper = ({ galleries,handleImageClick,setRealIndex}) => {
-    // Sort galleries by their order property
-    const sortedGalleries = galleries.sort((a, b) => a.order - b.order);
- 
+const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
     return (
         <>
-          {sortedGalleries.map((gallery, galleryIndex) => {
+            {galleries.sort((a,b) => a.order - b.order).map((gallery,index) => {
+                console.log(gallery);
                 const filteredImages = getFilteredImages(gallery);
-           
-                const initialSlideIndex = filteredImages.findIndex(image => image.featured);
-                
+
                 return (
                     <Swiper
-                        key={galleryIndex}
+                        key={ index}
                         modules={[EffectFade]}
                         spaceBetween={50}
                         slidesPerView={1}
@@ -32,7 +28,6 @@ const GalleryMultiSwiper = ({ galleries,handleImageClick,setRealIndex}) => {
                         effect={"fade"}
                         onClick={() => handleImageClick(gallery.images)}
                         onSlideChange={(swiper) => setRealIndex(swiper.realIndex)}
-                        initialSlide={initialSlideIndex}
                         fadeEffect={{ crossFade: true }}
                     >
                         {filteredImages.map((image, index) => (
@@ -44,8 +39,6 @@ const GalleryMultiSwiper = ({ galleries,handleImageClick,setRealIndex}) => {
                 );
             })}
         </>
-          
-
     );
 };
 

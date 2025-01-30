@@ -355,7 +355,7 @@ const images = {
 
                     },
                     {
-                        id: 3,
+                        id: 2,
                         src: fam2,
                         alt: "friends",
                         style: "landscape"
@@ -389,10 +389,12 @@ const images = {
                 images: [
                     {
                         id: 1,
-                        src: bd1,
-                        alt: "d",
+                        src: bd4,
+                        alt: "girl2",
                         style: "landscape",
+                        featured: true,
                     },
+
                     {
                         id: 2,
                         src: bd2,
@@ -400,24 +402,21 @@ const images = {
                         style: "landscape",
 
                     },
-
-
                     {
-                        id: 4,
-                        src: bd4,
-                        alt: "girl2",
+                        id: 3,
+                        src: bd1,
+                        alt: "d",
                         style: "landscape",
-                        featured: true,
                     },
                     {
-                        id: 5,
+                        id: 4,
                         src: bd5,
                         alt: "house",
                         style: "landscape",
 
                     },
                     {
-                        id: 6,
+                        id: 5,
                         src: bd6,
                         alt: "ladies",
                         style: "landscape",
@@ -495,6 +494,13 @@ const images = {
                 order: 4,
                 images: [
                     {
+                        id: 4,
+                        src: w3,
+                        alt: "dmp",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
                         id: 8,
                         src: w7,
                         alt: "ladies",
@@ -520,13 +526,7 @@ const images = {
                         style: "landscape",
 
                     },
-                    {
-                        id: 4,
-                        src: w3,
-                        alt: "dmp",
-                        style: "landscape",
-                        featured: true,
-                    },
+
                     {
                         id: 5,
                         src: w4,

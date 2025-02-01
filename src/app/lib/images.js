@@ -254,19 +254,14 @@ const images = {
                         style: "landscape",
 
                     },
-                    {
-                        id: 2,
-                        src: bm2,
-                        alt: "friends",
-
-
-                    },
+                   
                     {
                         id: 3,
                         src: bm3,
                         alt: "fun",
                         style: "landscape",
-                        featured: true,
+                     
+                    
                     },
 
                     {

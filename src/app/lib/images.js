@@ -555,46 +555,7 @@ const images = {
 
                 ]
             },
-            {
-                name: "cars",
-                order: 8,
-                images: [
-                    {
-                        id: 1,
-                        src: car1,
-                        alt: "dmp",
-                        style: "landscape",
-                        featured: true,
-                    },
-                    {
-                        id: 2,
-                        src: car2,
-                        alt: "dmp",
-                        style: "landscape",
-                     
-                    },
-                    {
-                        id: 3,
-                        src: car3,
-                        alt: "ladies",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 4,
-                        src: car4,
-                        alt: "ladies",
-                        style: "landscape",
-                    },
-                    {
-                        id: 5,
-                        src: car5,
-                        alt: "tree",
-                        style: "landscape",
-                    },
-                 
-                ]
-            },
+          
 
         ],
     ],

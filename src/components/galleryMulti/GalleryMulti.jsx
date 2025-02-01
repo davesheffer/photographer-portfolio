@@ -32,6 +32,7 @@ const GalleryMulti = ({ gallery }) => {
                     galleries={galleries}
                     handleImageClick={handleImageClick}
                     setRealIndex={(index) => setGalleryRealIndex(index)}
+                    className="overflow-hidden h-40"
                 />
             ))}
             {showGallery && (

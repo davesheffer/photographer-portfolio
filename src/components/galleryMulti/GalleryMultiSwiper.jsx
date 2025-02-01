@@ -20,6 +20,7 @@ const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
 
                 return (
                     <Swiper
+                      
                         key={ index}
                         modules={[EffectFade]}
                         spaceBetween={50}
@@ -31,7 +32,7 @@ const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
                         fadeEffect={{ crossFade: true }}
                     >
                         {filteredImages.map((image, index) => (
-                            <SwiperSlide key={image.id}>
+                            <SwiperSlide  key={image.id}>
                                 <GalleryMultiSlide index={index} image={image} />
                             </SwiperSlide>
                         ))}

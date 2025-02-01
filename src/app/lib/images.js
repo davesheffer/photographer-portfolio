@@ -6,6 +6,15 @@ import Slider_5 from "/public/slider/polle.jpg";
 // Art Images
 import two from "/public/art/two.jpg";
 import gh1 from "/public/wg/gh/gh1.jpg";
+
+//cars
+import car1 from "/public/cars/car1.jpg";
+import car2 from "/public/cars/car2.jpg";
+import car3 from "/public/cars/car3.jpg";
+import car4 from "/public/cars/car4.jpg";
+import car5 from "/public/cars/car5.jpg";
+
+
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
 import h2 from "/public/wg/h/h2.jpg";
@@ -38,6 +47,7 @@ import fam2 from "/public/wg/family/fam2.jpg";
 import fam4 from "/public/wg/family/fam4.jpg";
 import fam5 from "/public/wg/family/fam5.jpg";
 import fam6 from "/public/wg/family/fam6.jpg";
+import fam7 from "/public/wg/family/fam7.jpg"
 
 import wed1 from "/public/wg/wedding/wed1.jpg";
 import wed2 from "/public/wg/wedding/wed2.jpg";
@@ -407,11 +417,16 @@ const images = {
                     },
 
                     {
-                        id: 7,
+                        id: 6,
                         src: fam6,
                         alt: "shlomit",
                         style: "landscape",
 
+                    },
+                    {id: 7,
+                        src: fam7,
+                        alt: 'gingi',
+                        style: "landscape",
                     }
                 ]
             },
@@ -540,6 +555,47 @@ const images = {
 
                 ]
             },
+            {
+                name: "cars",
+                order: 8,
+                images: [
+                    {
+                        id: 1,
+                        src: car1,
+                        alt: "dmp",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 2,
+                        src: car2,
+                        alt: "dmp",
+                        style: "landscape",
+                     
+                    },
+                    {
+                        id: 3,
+                        src: car3,
+                        alt: "ladies",
+                        style: "landscape",
+
+                    },
+                    {
+                        id: 4,
+                        src: car4,
+                        alt: "ladies",
+                        style: "landscape",
+                    },
+                    {
+                        id: 5,
+                        src: car5,
+                        alt: "tree",
+                        style: "landscape",
+                    },
+                 
+                ]
+            },
+
         ],
     ],
 };

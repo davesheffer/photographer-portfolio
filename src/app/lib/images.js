@@ -423,11 +423,11 @@ const images = {
                         style: "landscape",
 
                     },
-                    {id: 7,
-                        src: fam7,
-                        alt: 'gingi',
-                        style: "landscape",
-                    }
+                    // {id: 7,
+                    //     src: fam7,
+                    //     alt: 'gingi',
+                    //     style: "landscape",
+                    // }
                 ]
             },
             {

@@ -20,7 +20,7 @@ const Navigation = ({ amatic }) => {
   };
   return (
     <>
-      <header className=" shadow-lg  opacity-95  lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10 ">
+      <header className=" shadow-lg opacity-95 lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 bg-white border-l-4 w-full z-10 ">
         <div className="px-4 flex items-center gap-4">
           {!isMenuOpen && (
             <CiMenuFries

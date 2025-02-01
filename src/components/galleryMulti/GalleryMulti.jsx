@@ -25,7 +25,7 @@ const GalleryMulti = ({ gallery }) => {
     };
 
     return (
-        <div className="grid md:grid-cols-2 grid-cols-1" dir="ltr">
+        <div className="md:columns-2 columns-1" dir="ltr">
             {images[gallery].map((galleries, index) => (
                 <GalleryMultiSwiper
                     key={index}

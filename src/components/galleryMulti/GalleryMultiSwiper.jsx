@@ -20,7 +20,6 @@ const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
 
                 return (
                     <Swiper
-                      
                         key={ index}
                         modules={[EffectFade]}
                         spaceBetween={50}

@@ -1,4 +1,4 @@
-import { CiStar } from "react-icons/ci";
+
 
 import Image from "next/image";
 

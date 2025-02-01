@@ -9,6 +9,7 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { IoLogInSharp } from "react-icons/io5";
 
 const Navigation = ({ amatic }) => {
   const currentPath = usePathname();
@@ -184,8 +185,13 @@ const Navigation = ({ amatic }) => {
           </div>
           <div className="flex gap-6 *:text-2xl pb-10  *:text-rose-500b  border-t-2">
             <div className="py-3 flex gap-4">
+            <Link href="https://www.instagram.com/nofikulu/" target="_blank">
+              
               <FaInstagram className="cursor-pointer" />
+              </Link>
+              <Link href="https://www.facebook.com/profile.php?id=100076431135095" target="_blank">
               <FaFacebook className="cursor-pointer" />
+              </Link>
             </div>
           </div>
         </div>

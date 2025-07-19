@@ -10,7 +10,7 @@ import 'swiper/css/effect-fade';
 export default function Home() {
   return (
     <main className=" h-screen md:w-[85vw] w-full md:mr-[15vw] md:px-10 py-4 overflow-hidden z-0 " >
-      <hr className="mb-2" />
+      <hr className="mb-2 border-gray-200" />
    
       <Swiper
         modules={[Autoplay, EffectFade]}
@@ -37,8 +37,8 @@ export default function Home() {
       
       <div
         id="footer"
-        className=" border-t-2 mt-2 border-gray-300 flex items-center justify-center h-[3vh]">
-        <span> כל הזכויות שמורות נופר שפר © 2024</span>
+        className="border-t border-gray-200 mt-2 flex items-center justify-center h-[3vh]">
+        <span className="text-gray-600 text-sm"> כל הזכויות שמורות נופר שפר © 2024</span>
       </div>
     </main>
   );

@@ -114,6 +114,17 @@ const Navigation = ({ amatic }) => {
                 >
                   בלוג
                 </Link>
+                <Link
+                  href="/contact"
+                  onClick={handleMenu}
+                  className={`py-3 px-4 rounded-lg text-lg font-medium transition-all duration-200 ${
+                    currentPath === "/contact" 
+                      ? "text-rose-500 bg-rose-50" 
+                      : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
+                  }`}
+                >
+                  צור קשר
+                </Link>
               </nav>
             </div>
 
@@ -209,6 +220,15 @@ const Navigation = ({ amatic }) => {
               }`}
             >
               בלוג
+            </Link>
+
+            <Link
+              href="/contact"
+              className={`text-gray-700 hover:text-rose-500 transition-colors duration-200 ${
+                currentPath === "/contact" && "text-rose-500"
+              }`}
+            >
+              צור קשר
             </Link>
 
           </div>

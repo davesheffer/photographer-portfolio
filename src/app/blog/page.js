@@ -20,10 +20,10 @@ const Blog = () => {
                             />
                         </div>
                         <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                            הבלוג שלי
+                            הסיפורים שלי
                         </h1>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            סיפורים, רגשות וזכרונות מאחורי העדשה
+                            מה קורה מאחורי העדשה ובין הצילומים
                         </p>
                         <div className="mt-8 w-24 h-1 bg-rose-500 mx-auto rounded-full"></div>
                     </div>
@@ -43,10 +43,10 @@ const Blog = () => {
                     <div className="text-center py-16">
                         <div className="text-gray-400 text-6xl mb-4">📝</div>
                         <h3 className="text-xl font-semibold text-gray-600 mb-2">
-                            עדיין אין פוסטים
+                            עוד לא כתבתי כלום
                         </h3>
                         <p className="text-gray-500">
-                            בקרוב יהיו כאן סיפורים מרתקים!
+                            אבל בקרוב יהיו כאן סיפורים מעניינים!
                         </p>
                     </div>
                 )}

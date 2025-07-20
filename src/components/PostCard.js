@@ -19,7 +19,7 @@ const PostCard = ({ post }) => {
                 <div className="p-6">
                     <div className="flex items-center mb-3">
                         <div className="w-2 h-2 bg-rose-500 rounded-full ml-2"></div>
-                        <span className="text-sm text-gray-500 font-medium">פוסט חדש</span>
+                        <span className="text-sm text-gray-500 font-medium">סיפור חדש</span>
                     </div>
                     
                     <h2 className="text-xl md:text-2xl font-bold text-gray-900 mb-3 leading-tight group-hover:text-rose-600 transition-colors duration-200">
@@ -32,7 +32,7 @@ const PostCard = ({ post }) => {
                     
                     <div className="flex items-center justify-between">
                         <span className="text-rose-500 font-semibold text-sm group-hover:text-rose-600 transition-colors">
-                            קרא עוד ←
+                            בואו נקרא ←
                         </span>
                         <div className="flex space-x-1">
                             <div className="w-1 h-1 bg-rose-300 rounded-full"></div>

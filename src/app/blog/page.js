@@ -1,52 +1,43 @@
+"use client";
+
 import PostCard from "@/components/PostCard";
 import posts from '@/app/lib/posts';
-import Image from 'next/image';
-import logo from '/public/logo.png';
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslations } from "@/lib/translations";
 
 const Blog = () => {
+    const { language, isRTL } = useLanguage();
+    const t = useTranslations(language);
+    
     return (
-        <div className="min-h-screen md:mr-[15vw] md:mt-0 mt-[7vh] bg-gradient-to-br from-rose-50 to-white">
-            {/* Hero Section */}
-            <div className="relative overflow-hidden bg-white shadow-sm">
-                <div className="max-w-7xl mx-auto px-6 py-16 sm:py-24">
-                    <div className="text-center">
-                        <div className="flex justify-center mb-8">
-                            <Image 
-                                src={logo} 
-                                className="w-20 h-20 rounded-full shadow-lg" 
-                                alt="נופר שפר לוגו"
-                                width={80}
-                                height={80}
-                            />
-                        </div>
-                        <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
-                            הסיפורים שלי
-                        </h1>
-                        <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                            מה קורה מאחורי העדשה ובין הצילומים
-                        </p>
-                        <div className="mt-8 w-24 h-1 bg-rose-500 mx-auto rounded-full"></div>
-                    </div>
-                </div>
+        <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] bg-white`}>
+            {/* Simple Header */}
+            <div className="px-6 py-8">
+                <h1 className="text-2xl font-bold text-gray-900 mb-2">
+                    {t.myStories}
+                </h1>
+                <p className="text-gray-600">
+                    {t.behindTheLens}
+                </p>
             </div>
 
-            {/* Blog Posts Grid */}
-            <div className="max-w-7xl mx-auto px-6 py-16">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {posts.map((post) => (
-                        <PostCard key={post.id} post={post} />
-                    ))}
-                </div>
-                
-                {/* Empty State if no posts */}
-                {posts.length === 0 && (
-                    <div className="text-center py-16">
-                        <div className="text-gray-400 text-6xl mb-4">📝</div>
-                        <h3 className="text-xl font-semibold text-gray-600 mb-2">
-                            עוד לא כתבתי כלום
+            {/* Full Width Blog Posts */}
+            <div className="pb-16">
+                {posts.length > 0 ? (
+                    <div className="space-y-8">
+                        {posts.map((post) => (
+                            <PostCard key={post.id} post={post} />
+                        ))}
+                    </div>
+                ) : (
+                    /* Empty State */
+                    <div className="text-center py-20">
+                        <div className="text-gray-300 text-5xl mb-4">📝</div>
+                        <h3 className="text-lg font-medium text-gray-600 mb-2">
+                            {t.noPostsYet}
                         </h3>
-                        <p className="text-gray-500">
-                            אבל בקרוב יהיו כאן סיפורים מעניינים!
+                        <p className="text-gray-500 text-sm">
+                            {t.comingSoon}
                         </p>
                     </div>
                 )}

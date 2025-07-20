@@ -26,3 +26,26 @@ body {
     text-wrap: balance;
   }
 }
+
+/* RTL/LTR Layout Transitions */
+html {
+  transition: direction 0.3s ease;
+}
+
+/* Ensure proper text alignment for both directions */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="ltr"] {
+  text-align: left;
+}
+
+/* Fix for Swiper in RTL/LTR */
+.swiper {
+  direction: ltr !important;
+}
+
+.swiper-slide {
+  text-align: center;
+}

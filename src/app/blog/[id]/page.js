@@ -5,18 +5,22 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import posts from "@/app/lib/posts";
 import { IoArrowForward, IoCalendarOutline, IoTimeOutline } from "react-icons/io5";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslations } from "@/lib/translations";
 
 const Post = () => {
     const { id } = useParams();
+    const { language, isRTL } = useLanguage();
+    const t = useTranslations(language);
     const post = posts.find((post) => post.id === parseInt(id));
 
     if (!post) {
         return (
-            <div className="min-h-screen md:mr-[15vw] md:mt-0 mt-[7vh] flex items-center justify-center">
+            <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] flex items-center justify-center`}>
                 <div className="text-center">
-                    <h1 className="text-2xl font-bold text-gray-900 mb-4">הפוסט לא נמצא</h1>
+                    <h1 className="text-2xl font-bold text-gray-900 mb-4">{t.postNotFound}</h1>
                     <Link href="/blog" className="text-rose-500 hover:text-rose-600 font-semibold">
-                        חזרה לבלוג ←
+                        {t.backToBlog} {isRTL ? '←' : '→'}
                     </Link>
                 </div>
             </div>
@@ -24,7 +28,7 @@ const Post = () => {
     }
 
     return (
-        <div className="min-h-screen md:mr-[15vw] md:mt-0 mt-[7vh] bg-gradient-to-br from-rose-50 to-white">
+        <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] bg-gradient-to-br from-rose-50 to-white`}>
             {/* Back Navigation */}
             <div className="bg-white shadow-sm border-b border-gray-100">
                 <div className="max-w-4xl mx-auto px-6 py-4">
@@ -32,8 +36,8 @@ const Post = () => {
                         href="/blog" 
                         className="inline-flex items-center text-gray-600 hover:text-rose-500 transition-colors duration-200 font-medium"
                     >
-                        <IoArrowForward className="ml-2" />
-                        חזרה לבלוג
+                        <IoArrowForward className={isRTL ? "ml-2" : "mr-2"} />
+                        {t.backToBlog}
                     </Link>
                 </div>
             </div>
@@ -44,7 +48,7 @@ const Post = () => {
                 <div className="relative mb-8 rounded-2xl overflow-hidden shadow-2xl">
                     <Image 
                         src={post.image} 
-                        alt={post.title} 
+                        alt={typeof post.title === 'object' ? post.title[language] : post.title} 
                         className="w-full h-[60vh] object-cover"
                         width={800}
                         height={600}
@@ -58,17 +62,17 @@ const Post = () => {
                     <div className="flex items-center gap-4 mb-6 text-sm text-gray-500">
                         <div className="flex items-center gap-1">
                             <IoCalendarOutline />
-                            <span>היום</span>
+                            <span>{t.today}</span>
                         </div>
                         <div className="flex items-center gap-1">
                             <IoTimeOutline />
-                            <span>קריאה של 3 דקות</span>
+                            <span>{t.readingTime}</span>
                         </div>
                         <div className="w-2 h-2 bg-rose-500 rounded-full"></div>
                     </div>
                     
                     <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
-                        {post.title}
+                        {typeof post.title === 'object' ? post.title[language] : post.title}
                     </h1>
                     
                     <div className="w-24 h-1 bg-rose-500 rounded-full"></div>
@@ -77,18 +81,18 @@ const Post = () => {
                 {/* Article Body */}
                 <div className="prose prose-lg max-w-none">
                     <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
-                        <p className="text-gray-700 leading-relaxed text-lg mb-6 first-letter:text-4xl first-letter:font-bold first-letter:text-rose-500 first-letter:float-right first-letter:ml-2 first-letter:mt-1">
-                            {post.description}
+                        <p className={`text-gray-700 leading-relaxed text-lg mb-6 first-letter:text-4xl first-letter:font-bold first-letter:text-rose-500 ${isRTL ? 'first-letter:float-right first-letter:ml-2' : 'first-letter:float-left first-letter:mr-2'} first-letter:mt-1`}>
+                            {typeof post.description === 'object' ? post.description[language] : post.description}
                         </p>
                         
-                        <div className="border-r-4 border-rose-500 pr-6 bg-rose-50 p-6 rounded-lg my-8">
+                        <div className={`${isRTL ? 'border-r-4 pr-6' : 'border-l-4 pl-6'} border-rose-500 bg-rose-50 p-6 rounded-lg my-8`}>
                             <p className="text-gray-700 italic">
-                                "כל תמונה מספרת סיפור, וכל סיפור שווה אלף מילים."
+                                "{t.photoQuote}"
                             </p>
                         </div>
                         
                         <p className="text-gray-700 leading-relaxed text-lg">
-                            זהו רק התחלה של הסיפור. בקרוב יהיו כאן עוד פרטים מרתקים על הצילום הזה ועל הרגעים המיוחדים שנתפסו בעדשה.
+                            {t.storyBeginning}
                         </p>
                     </div>
                 </div>
@@ -97,14 +101,14 @@ const Post = () => {
                 <footer className="mt-12 pt-8 border-t border-gray-200">
                     <div className="flex items-center justify-between">
                         <div className="text-sm text-gray-500">
-                            נכתב על ידי נופר שפר
+                            {t.writtenBy}
                         </div>
                         <Link 
                             href="/blog" 
                             className="inline-flex items-center px-6 py-3 bg-rose-500 text-white rounded-full hover:bg-rose-600 transition-colors duration-200 font-semibold"
                         >
-                            עוד פוסטים
-                            <IoArrowForward className="mr-2" />
+                            {t.morePosts}
+                            <IoArrowForward className={isRTL ? "mr-2" : "ml-2"} />
                         </Link>
                     </div>
                 </footer>

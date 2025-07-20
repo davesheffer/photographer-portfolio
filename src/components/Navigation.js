@@ -9,17 +9,36 @@ import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { useTranslations } from "@/lib/translations";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 
 const Navigation = ({ amatic }) => {
   const currentPath = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { language, isRTL } = useLanguage();
+  const t = useTranslations(language);
+  
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  // Fallback values in case translations aren't loaded yet
+  const fallbackTranslations = {
+    home: language === 'en' ? 'Home' : 'בית',
+    galleries: language === 'en' ? 'Galleries' : 'גלריות',
+    blog: language === 'en' ? 'Blog' : 'בלוג',
+    contact: language === 'en' ? 'Contact' : 'צור קשר',
+    contactUs: language === 'en' ? 'Contact Us' : 'צרו קשר',
+    phone: language === 'en' ? 'Phone' : 'נייד',
+    email: language === 'en' ? 'Email' : 'מייל'
+  };
+
+  const translations = t || fallbackTranslations;
   return (
     <>
-      <header className="shadow-md backdrop-blur-sm bg-white/95 lg:hidden App-header fixed top-0 right-0 h-[calc(10dvh)] flex items-center gap-10 border-l-4 border-rose-500 w-full z-10">
+      <header className={`shadow-md backdrop-blur-sm bg-white/95 lg:hidden App-header fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-[calc(10dvh)] flex items-center gap-10 ${isRTL ? 'border-l-4' : 'border-r-4'} border-rose-500 w-full z-10`}>
         <div className="px-4 flex items-center gap-4">
           {!isMenuOpen && (
             <CiMenuFries
@@ -39,7 +58,7 @@ const Navigation = ({ amatic }) => {
             />
             <div>
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
-              נופר שפר
+              {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
             </h1>
 
             </div>
@@ -47,8 +66,8 @@ const Navigation = ({ amatic }) => {
         </div>
         <div
           id="nav"
-          className={`fixed shadow-xl bg-white top-0 right-0 h-[calc(100dvh)] ${
-            isMenuOpen ? "w-[70vw] max-w-sm" : " translate-x-full"
+          className={`fixed shadow-xl bg-white top-0 ${isRTL ? 'right-0' : 'left-0'} h-[calc(100dvh)] ${
+            isMenuOpen ? "w-[70vw] max-w-sm" : (isRTL ? "translate-x-full" : "-translate-x-full")
           } transition-all duration-300 ease-in-out z-20`}
         >
           <div className="flex flex-col justify-between h-full p-6">
@@ -68,7 +87,7 @@ const Navigation = ({ amatic }) => {
                     height={50}
                   />
                   <h1 className={`font-amatic text-2xl text-gray-800 ${amatic.className}`}>
-                    נופר שפר
+                    {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
                   </h1>
                 </Link>
                 {isMenuOpen && (
@@ -90,7 +109,7 @@ const Navigation = ({ amatic }) => {
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
-                  בית
+                  {translations.home}
                 </Link>
                 <Link
                   href="/gallery/people"
@@ -101,7 +120,7 @@ const Navigation = ({ amatic }) => {
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
-                  גלריות
+                  {translations.galleries}
                 </Link>
                 <Link
                   href="/blog"
@@ -112,7 +131,7 @@ const Navigation = ({ amatic }) => {
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
-                  בלוג
+                  {translations.blog}
                 </Link>
                 <Link
                   href="/contact"
@@ -123,7 +142,7 @@ const Navigation = ({ amatic }) => {
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
-                  צור קשר
+                  {translations.contact}
                 </Link>
               </nav>
             </div>
@@ -131,10 +150,10 @@ const Navigation = ({ amatic }) => {
             {/* Contact Section */}
             <div className="border-t border-gray-100 pt-6">
               <div className="mb-4">
-                <h2 className="text-rose-500 font-semibold text-lg mb-3">צרו קשר</h2>
+                <h2 className="text-rose-500 font-semibold text-lg mb-3">{translations.contactUs}</h2>
                 <div className="space-y-2 text-gray-600">
                   <p className="flex items-center gap-2">
-                    <span className="text-sm">נייד:</span>
+                    <span className="text-sm">{translations.phone}:</span>
                     <a 
                       href="https://wa.me/0522832144" 
                       className="hover:text-rose-500 transition-colors duration-200 font-medium"
@@ -143,7 +162,7 @@ const Navigation = ({ amatic }) => {
                     </a>
                   </p>
                   <p className="flex items-center gap-2">
-                    <span className="text-sm">מייל:</span>
+                    <span className="text-sm">{translations.email}:</span>
                     <a 
                       href="mailto:kuli.nof@gmail.com"
                       className="hover:text-rose-500 transition-colors duration-200 font-medium text-sm"
@@ -154,31 +173,34 @@ const Navigation = ({ amatic }) => {
                 </div>
               </div>
               
-              {/* Social Media */}
-              <div className="flex gap-4 justify-center pt-4">
-                <a 
-                  href="https://www.instagram.com/nofikulu/" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
-                >
-                  <FaInstagram className="text-xl" />
-                </a>
-                <a 
-                  href="https://www.facebook.com/profile.php?id=100076431135095" 
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
-                >
-                  <FaFacebook className="text-xl" />
-                </a>
+              {/* Language Switcher & Social Media */}
+              <div className="flex items-center justify-between pt-4">
+                <LanguageSwitcher />
+                <div className="flex gap-3">
+                  <a 
+                    href="https://www.instagram.com/nofikulu/" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
+                  >
+                    <FaInstagram className="text-lg" />
+                  </a>
+                  <a 
+                    href="https://www.facebook.com/profile.php?id=100076431135095" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
+                  >
+                    <FaFacebook className="text-lg" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <header className="hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 border-l-4 border-rose-500 w-[15vw] shadow-sm">
+      <header className={`hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 ${isRTL ? 'border-l-4 right-0' : 'border-r-4 left-0'} border-rose-500 w-[15vw] shadow-sm`}>
         <div id="main" className="flex gap-10 flex-col">
           <Link className="flex gap-4 items-center relative" href="/">
             <Image
@@ -190,7 +212,7 @@ const Navigation = ({ amatic }) => {
             />
             <div>
               <h1 className={`font-amatic text-4xl ${amatic.className}`}>
-                נופר שפר
+                {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
               </h1>
 
             </div>
@@ -202,7 +224,7 @@ const Navigation = ({ amatic }) => {
                 currentPath === "/" && "text-rose-500"
               }`}
             >
-              בית
+              {translations.home}
             </Link>
             <Link
               href="/gallery/people"
@@ -210,7 +232,7 @@ const Navigation = ({ amatic }) => {
                 currentPath === "/gallery/people" && "text-rose-500"
               }`}
             >
-              גלריות
+              {translations.galleries}
             </Link>
 
             <Link
@@ -219,7 +241,7 @@ const Navigation = ({ amatic }) => {
                 currentPath === "/blog" && "text-rose-500"
               }`}
             >
-              בלוג
+              {translations.blog}
             </Link>
 
             <Link
@@ -228,27 +250,27 @@ const Navigation = ({ amatic }) => {
                 currentPath === "/contact" && "text-rose-500"
               }`}
             >
-              צור קשר
+              {translations.contact}
             </Link>
 
           </div>
         </div>
         <div id="contact-details" className="flex flex-col gap-2">
           <div className="flex flex-col gap-2">
-            <h2 className="text-rose-500 text-xl">צרו קשר</h2>
+            <h2 className="text-rose-500 text-xl">{translations.contactUs}</h2>
             <div>
-              <p>נייד: <a href="https://wa.me/0522832144">0522832144</a></p>
-              <p>מייל:kuli.nof@gmail.com</p>
+              <p>{translations.phone}: <a href="https://wa.me/0522832144">0522832144</a></p>
+              <p>{translations.email}: kuli.nof@gmail.com</p>
             </div>
           </div>
-          <div className="flex gap-6 *:text-2xl pb-10  *:text-rose-500b  border-t-2">
-            <div className="py-3 flex gap-4">
-            <Link href="https://www.instagram.com/nofikulu/" target="_blank">
-              
-              <FaInstagram className="cursor-pointer hover:scale-110 transition-transform duration-200" />
+          <div className="flex items-center justify-between pb-6 border-t-2 pt-4">
+            <LanguageSwitcher />
+            <div className="flex gap-3">
+              <Link href="https://www.instagram.com/nofikulu/" target="_blank">
+                <FaInstagram className="cursor-pointer hover:scale-110 transition-transform duration-200 text-xl text-rose-500" />
               </Link>
               <Link href="https://www.facebook.com/profile.php?id=100076431135095" target="_blank">
-              <FaFacebook className="cursor-pointer hover:scale-110 transition-transform duration-200" />
+                <FaFacebook className="cursor-pointer hover:scale-110 transition-transform duration-200 text-xl text-rose-500" />
               </Link>
             </div>
           </div>

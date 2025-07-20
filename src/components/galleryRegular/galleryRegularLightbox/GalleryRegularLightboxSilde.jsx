@@ -1,11 +1,19 @@
 import Image from "next/image";
 
-const GalleryRegularLightboxSilde = ({ image,selectedImage}) => {
-  return (
-    <div className="flex text-white items-center justify-center md:h-[100vh] h-screen p-4 w-full z-0">
-      <Image src={image.src} alt={image.alt} className="md:h-screen h-auto w-auto"/> 
-    </div>
-  );
+const GalleryRegularLightboxSlide = ({ image, selectedImage }) => {
+    return (
+        <div className="flex items-center justify-center h-screen w-full p-4">
+            <Image 
+                src={image.src} 
+                alt={image.alt} 
+                quality={100}
+                priority={true}
+                className="max-h-full max-w-full object-contain"
+                width={1200}
+                height={800}
+            /> 
+        </div>
+    );
 };
 
-export default GalleryRegularLightboxSilde;
+export default GalleryRegularLightboxSlide;

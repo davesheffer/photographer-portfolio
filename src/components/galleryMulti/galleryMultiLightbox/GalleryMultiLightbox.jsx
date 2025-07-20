@@ -2,12 +2,14 @@ import { IoClose } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useRef } from "react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import GalleryMultiLightboxSilde from "./GalleryMultiLightboxSilde";
+import GalleryMultiLightboxSlide from "./GalleryMultiLightboxSilde";
 import "swiper/css";
 import "swiper/css/effect-fade";
 
 const GalleryMultiLightbox = ({ selectedLightbox, showGallery, setShowGallery, realIndex }) => {
     const swiperRef = useRef(null);
+
+    if (!selectedLightbox || !Array.isArray(selectedLightbox)) return null;
 
     return (
         <div
@@ -20,22 +22,23 @@ const GalleryMultiLightbox = ({ selectedLightbox, showGallery, setShowGallery, r
             <Swiper
                 ref={swiperRef}
                 modules={[Autoplay, EffectFade]}
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={1}
-                loop={true}
-                autoplay={{ delay: 3000, disableOnInteraction: false }}
+                loop={selectedLightbox.length > 1}
+                autoplay={{ 
+                    delay: 4000, 
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true 
+                }}
                 effect="fade"
                 fadeEffect={{ crossFade: true }}
-                initialSlide={selectedLightbox[realIndex]}
+                initialSlide={Math.max(0, Math.min(realIndex || 0, selectedLightbox.length - 1))}
             >
-                {selectedLightbox
-                    .slice()
-                    .sort((a, b) => b.id - a.id)
-                    .map((image, index) => (
-                        <SwiperSlide key={image.id}>
-                            <GalleryMultiLightboxSilde index={index} image={image} />
-                        </SwiperSlide>
-                    ))}
+                {selectedLightbox.map((image, index) => (
+                    <SwiperSlide key={`${image.id}-${index}`}>
+                        <GalleryMultiLightboxSlide index={index} image={image} />
+                    </SwiperSlide>
+                ))}
             </Swiper>
         </div>
     );

@@ -1,40 +1,41 @@
 import { IoClose } from "react-icons/io5";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectFade } from "swiper/modules";
-import GalleryRegularLightboxSilde from "./GalleryRegularLightboxSilde";
+import GalleryRegularLightboxSlide from "./GalleryRegularLightboxSilde";
 import "swiper/css";
 import 'swiper/css/effect-fade';
 
 const GalleryRegularLightbox = ({ images, setShowGallery, setSelectedImage, selectedImage }) => {
 
-    if (!images) return null;
+    if (!images || !Array.isArray(images)) return null;
 
     return (
-        <div className="fixed top-0 right-0 h-full w-full bg-black  z-20">
-            <IoClose className="text-white md:text-6xl text-3xl absolute md:right-10 md:top-10 right-5 top-5 z-10" onClick={() => setShowGallery(false)} />
+        <div className="fixed top-0 right-0 h-full w-full bg-black z-20 transition-opacity duration-500 ease-in-out">
+            <IoClose 
+                className="text-white md:text-6xl text-3xl absolute md:right-10 md:top-10 right-5 top-5 z-10 cursor-pointer" 
+                onClick={() => setShowGallery(false)} 
+            />
             <Swiper
                 modules={[Autoplay, EffectFade]}
-                spaceBetween={50}
+                spaceBetween={0}
                 slidesPerView={1}
-                loop={true}
+                loop={images.length > 1}
                 autoplay={{
-                    delay: 3000,
+                    delay: 4000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
                 }}
-                effect={"fade"}
-                initialSlide={selectedImage}
+                effect="fade"
                 fadeEffect={{ crossFade: true }}
-             
-                onSwiper={(swiper) => console.log(swiper)}>
+                initialSlide={Math.max(0, Math.min(selectedImage || 0, images.length - 1))}
+                onSwiper={(swiper) => {}}>
                 {images.map((image, index) => (
-                    <SwiperSlide key={index}>
-                        <GalleryRegularLightboxSilde index={index} setSelectedImage={setSelectedImage} image={image} />
+                    <SwiperSlide key={`${image.id || index}-${index}`}>
+                        <GalleryRegularLightboxSlide index={index} setSelectedImage={setSelectedImage} image={image} />
                     </SwiperSlide>
                 ))}
             </Swiper>
-
-
         </div>
-
     );
 }
 export default GalleryRegularLightbox;

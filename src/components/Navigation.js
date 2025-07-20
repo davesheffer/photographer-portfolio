@@ -13,7 +13,6 @@ import { FaFacebook } from "react-icons/fa";
 
 const Navigation = ({ amatic }) => {
   const currentPath = usePathname();
-  console.log(currentPath);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

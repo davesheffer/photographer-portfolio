@@ -1,4 +1,4 @@
-// Silder Images
+// Slider Images
 
 import Slider_3 from "/public/slider/yam.png";
 import Slider_5 from "/public/slider/polle.jpg";

@@ -12,7 +12,7 @@ const GalleryRegular = ({ gallery }) => {
 
     const handleImageClick = (index) => {
         setSelectedImage(index);
-        setShowGallery(true , index);
+        setShowGallery(true);
     }
 
     return (

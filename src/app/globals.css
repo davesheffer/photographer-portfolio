@@ -21,6 +21,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* View Transitions */
+@supports (view-transition-name: none) {
+  :root {
+    view-transition-name: none;
+  }
+}
+
+::view-transition-old(post-image),
+::view-transition-new(post-image) {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

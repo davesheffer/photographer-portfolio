@@ -21,10 +21,10 @@ const Blog = () => {
                 </p>
             </div>
 
-            {/* Full Width Blog Posts */}
-            <div className="pb-16">
+            {/* Blog Posts Grid */}
+            <div className="pb-16 px-6">
                 {posts.length > 0 ? (
-                    <div className="space-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {posts.map((post) => (
                             <PostCard key={post.id} post={post} />
                         ))}

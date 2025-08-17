@@ -4,21 +4,36 @@ import Image from "next/image";
 import Link from "next/link";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslations } from "@/lib/translations";
+import { useRouter } from "next/navigation";
 
 const PostCard = ({ post }) => {
     const { language } = useLanguage();
     const t = useTranslations(language);
+    const router = useRouter();
+
+    const handleNavigation = (e) => {
+        e.preventDefault();
+        
+        if (typeof document !== 'undefined' && 'startViewTransition' in document) {
+            document.startViewTransition(() => {
+                window.location.href = `/blog/${post.id}`;
+            });
+        } else {
+            router.push(`/blog/${post.id}`);
+        }
+    };
+
     return (
-        <article className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 hover:border-rose-200 mx-6">
-            <Link href={`blog/${post.id}`} className="block">
-                <div className="relative overflow-hidden">
+        <article className="group bg-white rounded-xl shadow-sm hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 hover:border-rose-200">
+            <Link href={`/blog/${post.id}`} onClick={handleNavigation} className="block">
+                <div className="relative overflow-hidden aspect-[4/3] sm:aspect-[5/4]">
                     <Image 
                         src={post.image} 
                         alt={post.title} 
-                        className="w-full h-80 md:h-96 object-cover group-hover:scale-105 transition-transform duration-300"
-                        width={800}
-                        height={400}
+                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                        style={{ viewTransitionName: `post-image` }}
                         quality={90}
+                        fill
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     

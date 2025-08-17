@@ -53,7 +53,8 @@ const Post = () => {
                     <Image 
                         src={post.image} 
                         alt={typeof post.title === 'object' ? post.title[language] : post.title} 
-                        className="w-full h-[60vh] object-cover"
+                        className="w-full h-[60vh] object-cover object-top"
+                        style={{ viewTransitionName: `post-image` }}
                         width={800}
                         height={600}
                         priority

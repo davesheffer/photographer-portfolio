@@ -36,7 +36,7 @@ const PostCard = ({ post }) => {
                 <div className="p-6">
                     <div className="flex items-center justify-between">
                         <span className="text-rose-500 font-medium group-hover:text-rose-600 transition-colors">
-                            {t.letsRead} {language === 'he' ? '→' : '→'}
+                            {t.letsRead} {language === 'he' ? '←' : '→'}
                         </span>
                         <div className="flex items-center gap-2 text-sm text-gray-500">
                             <div className="w-2 h-2 bg-rose-400 rounded-full"></div>

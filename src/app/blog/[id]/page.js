@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import posts from "@/app/lib/posts";
-import { IoArrowForward, IoCalendarOutline, IoTimeOutline } from "react-icons/io5";
+import { IoArrowForward, IoArrowBack, IoCalendarOutline, IoTimeOutline } from "react-icons/io5";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { useTranslations } from "@/lib/translations";
 
@@ -20,7 +20,7 @@ const Post = () => {
                 <div className="text-center">
                     <h1 className="text-2xl font-bold text-gray-900 mb-4">{t.postNotFound}</h1>
                     <Link href="/blog" className="text-rose-500 hover:text-rose-600 font-semibold">
-                        {t.backToBlog} {isRTL ? '←' : '→'}
+                        {t.backToBlog} {isRTL ? '→' : '←'}
                     </Link>
                 </div>
             </div>
@@ -36,7 +36,11 @@ const Post = () => {
                         href="/blog" 
                         className="inline-flex items-center text-gray-600 hover:text-rose-500 transition-colors duration-200 font-medium"
                     >
-                        <IoArrowForward className={isRTL ? "ml-2" : "mr-2"} />
+                        {isRTL ? (
+                            <IoArrowForward className="ml-2" />
+                        ) : (
+                            <IoArrowBack className="mr-2" />
+                        )}
                         {t.backToBlog}
                     </Link>
                 </div>
@@ -108,7 +112,11 @@ const Post = () => {
                             className="inline-flex items-center px-6 py-3 bg-rose-500 text-white rounded-full hover:bg-rose-600 transition-colors duration-200 font-semibold"
                         >
                             {t.morePosts}
-                            <IoArrowForward className={isRTL ? "mr-2" : "ml-2"} />
+                            {isRTL ? (
+                                <IoArrowBack className="mr-2" />
+                            ) : (
+                                <IoArrowForward className="ml-2" />
+                            )}
                         </Link>
                     </div>
                 </footer>

@@ -29,4 +29,3 @@ const GalleryRegular = ({ gallery }) => {
     );
 }
 export default GalleryRegular;
-

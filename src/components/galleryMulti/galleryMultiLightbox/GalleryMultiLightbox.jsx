@@ -25,10 +25,10 @@ const GalleryMultiLightbox = ({ selectedLightbox, showGallery, setShowGallery, r
                 spaceBetween={0}
                 slidesPerView={1}
                 loop={selectedLightbox.length > 1}
-                autoplay={{ 
-                    delay: 4000, 
+                autoplay={{
+                    delay: 4000,
                     disableOnInteraction: false,
-                    pauseOnMouseEnter: true 
+                    pauseOnMouseEnter: true
                 }}
                 effect="fade"
                 fadeEffect={{ crossFade: true }}

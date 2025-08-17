@@ -38,7 +38,7 @@ const Navigation = ({ amatic }) => {
   const translations = t || fallbackTranslations;
   return (
     <>
-      <header className={`shadow-md backdrop-blur-sm bg-white/95 lg:hidden App-header fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-[calc(10dvh)] flex items-center gap-10 ${isRTL ? 'border-l-4' : 'border-r-4'} border-rose-500 w-full z-10`}>
+      <header style={{ viewTransitionName: 'mobile-nav' }} className={`shadow-md backdrop-blur-sm bg-white/95 lg:hidden App-header fixed top-0 ${isRTL ? 'right-0' : 'left-0'} h-[calc(10dvh)] flex items-center gap-10 ${isRTL ? 'border-l-4' : 'border-r-4'} border-rose-500 w-full z-10`}>
         <div className="px-4 flex items-center gap-4">
           {!isMenuOpen && (
             <CiMenuFries
@@ -200,7 +200,7 @@ const Navigation = ({ amatic }) => {
         </div>
       </header>
 
-      <header className={`hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 ${isRTL ? 'border-l-4 right-0' : 'border-r-4 left-0'} border-rose-500 w-[15vw] shadow-sm`}>
+      <header style={{ viewTransitionName: 'desktop-nav' }} className={`hidden App-header fixed h-screen lg:flex flex-col justify-between gap-10 pt-14 bg-white px-12 ${isRTL ? 'border-l-4 right-0' : 'border-r-4 left-0'} border-rose-500 w-[15vw] shadow-sm`}>
         <div id="main" className="flex gap-10 flex-col">
           <Link className="flex gap-4 items-center relative" href="/">
             <Image

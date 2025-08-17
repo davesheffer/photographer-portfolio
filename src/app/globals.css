@@ -21,18 +21,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* View Transitions */
+/* View Transitions for Next.js 15 */
 @supports (view-transition-name: none) {
   :root {
     view-transition-name: none;
   }
 }
 
-::view-transition-old(post-image),
-::view-transition-new(post-image) {
-  animation-duration: 0.5s;
-  animation-timing-function: ease-in-out;
+/* Custom timing for smoother transitions */
+::view-transition-group(*) {
+  animation-duration: 0.8s;
+  animation-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
+/* Define view transition names for post images */
+[class*="post-image-"] {
+  view-transition-name: var(--post-image-name);
+  contain: layout style paint;
+}
+
+/* Specific view transition names for each post */
+.post-image-1 { view-transition-name: post-image-1; }
+.post-image-2 { view-transition-name: post-image-2; }
+.post-image-3 { view-transition-name: post-image-3; }
+.post-image-4 { view-transition-name: post-image-4; }
+.post-image-5 { view-transition-name: post-image-5; }
+.post-image-6 { view-transition-name: post-image-6; }
+.post-image-7 { view-transition-name: post-image-7; }
+.post-image-8 { view-transition-name: post-image-8; }
+.post-image-9 { view-transition-name: post-image-9; }
+.post-image-10 { view-transition-name: post-image-10; }
 
 @layer utilities {
   .text-balance {

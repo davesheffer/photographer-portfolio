@@ -31,9 +31,9 @@ const Post = () => {
         <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] bg-gradient-to-br from-rose-50 to-white`}>
             {/* Back Navigation */}
             <div className="bg-white shadow-sm border-b border-gray-100">
-                <div className="max-w-4xl mx-auto px-6 py-4">
-                    <Link 
-                        href="/blog" 
+                <div className="max-w-4xl mx-auto px-6 py-8">
+                    <Link
+                        href="/blog"
                         className="inline-flex items-center text-gray-600 hover:text-rose-500 transition-colors duration-200 font-medium"
                     >
                         {isRTL ? (
@@ -50,13 +50,13 @@ const Post = () => {
             <article className="max-w-4xl mx-auto px-6 py-12">
                 {/* Hero Image */}
                 <div className="relative mb-8 rounded-2xl overflow-hidden shadow-2xl">
-                    <Image 
-                        src={post.image} 
-                        alt={typeof post.title === 'object' ? post.title[language] : post.title} 
-                        className="w-full h-[60vh] object-cover object-top"
-                        style={{ viewTransitionName: `post-image` }}
-                        width={800}
-                        height={600}
+                    <Image
+                        src={post.image}
+                        alt={typeof post.title === 'object' ? post.title[language] : post.title}
+                        className={`w-full h-[60vh] object-cover object-top post-image-${post.id}`}
+                        width={1200}
+                        height={800}
+                        quality={95}
                         priority
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
@@ -75,11 +75,11 @@ const Post = () => {
                         </div>
                         <div className="w-2 h-2 bg-rose-500 rounded-full"></div>
                     </div>
-                    
+
                     <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-6">
                         {typeof post.title === 'object' ? post.title[language] : post.title}
                     </h1>
-                    
+
                     <div className="w-24 h-1 bg-rose-500 rounded-full"></div>
                 </header>
 
@@ -89,13 +89,13 @@ const Post = () => {
                         <p className={`text-gray-700 leading-relaxed text-lg mb-6 first-letter:text-4xl first-letter:font-bold first-letter:text-rose-500 ${isRTL ? 'first-letter:float-right first-letter:ml-2' : 'first-letter:float-left first-letter:mr-2'} first-letter:mt-1`}>
                             {typeof post.description === 'object' ? post.description[language] : post.description}
                         </p>
-                        
+
                         <div className={`${isRTL ? 'border-r-4 pr-6' : 'border-l-4 pl-6'} border-rose-500 bg-rose-50 p-6 rounded-lg my-8`}>
                             <p className="text-gray-700 italic">
                                 "{t.photoQuote}"
                             </p>
                         </div>
-                        
+
                         <p className="text-gray-700 leading-relaxed text-lg">
                             {t.storyBeginning}
                         </p>
@@ -108,8 +108,8 @@ const Post = () => {
                         <div className="text-sm text-gray-500">
                             {t.writtenBy}
                         </div>
-                        <Link 
-                            href="/blog" 
+                        <Link
+                            href="/blog"
                             className="inline-flex items-center px-6 py-3 bg-rose-500 text-white rounded-full hover:bg-rose-600 transition-colors duration-200 font-semibold"
                         >
                             {t.morePosts}

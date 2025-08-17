@@ -8,7 +8,7 @@ import { useTranslations } from "@/lib/translations";
 const Blog = () => {
     const { language, isRTL } = useLanguage();
     const t = useTranslations(language);
-    
+
     return (
         <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] bg-white`}>
             {/* Simple Header */}

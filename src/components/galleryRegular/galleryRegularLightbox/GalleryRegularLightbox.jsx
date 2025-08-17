@@ -11,9 +11,9 @@ const GalleryRegularLightbox = ({ images, setShowGallery, setSelectedImage, sele
 
     return (
         <div className="fixed top-0 right-0 h-full w-full bg-black z-20 transition-opacity duration-500 ease-in-out">
-            <IoClose 
-                className="text-white md:text-6xl text-3xl absolute md:right-10 md:top-10 right-5 top-5 z-10 cursor-pointer" 
-                onClick={() => setShowGallery(false)} 
+            <IoClose
+                className="text-white md:text-6xl text-3xl absolute md:right-10 md:top-10 right-5 top-5 z-10 cursor-pointer"
+                onClick={() => setShowGallery(false)}
             />
             <Swiper
                 modules={[Autoplay, EffectFade]}

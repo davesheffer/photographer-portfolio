@@ -19,7 +19,7 @@ const Contact = () => {
                     <div className={`${isRTL ? 'lg:order-2 lg:col-span-7' : 'lg:order-1 lg:col-span-7'} relative`}>
                         <Image
                             src={images.people[0][0].images[0].src}
-                            alt={language === 'he' ? 'נופר שפר - צלמת מקצועית' : 'Nofar Shafer - Professional Photographer'}
+                            alt={language === 'he' ? 'נופר שפר - צלמת מקצועית' : 'Nofar Sheffer - Professional Photographer'}
                             className="w-full h-full object-cover"
                             width={800}
                             height={800}

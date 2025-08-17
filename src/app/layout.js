@@ -4,23 +4,23 @@ import Navigation from "@/components/Navigation";
 import { LanguageProvider } from "@/contexts/LanguageContext";
 import ClientLayout from "@/components/ClientLayout";
 
-const amatic = Amatic_SC({ 
-  subsets: ["hebrew", "latin"], 
-  display: "swap", 
-  style: "normal", 
+const amatic = Amatic_SC({
+  subsets: ["hebrew", "latin"],
+  display: "swap",
+  style: "normal",
   weight: '700'
 });
 
-const openSans = Open_Sans({ 
-  subsets: ["hebrew", "latin"], 
-  display: "swap", 
-  style: "normal", 
+const openSans = Open_Sans({
+  subsets: ["hebrew", "latin"],
+  display: "swap",
+  style: "normal",
   weight: '400'
 });
 
 export const metadata = {
-  title: "נופר שפר - צלמת מקצועית | Nofar Shafer - Professional Photographer",
-  description: "צלמת אירועי חברה, פרפורמס ומשפחה - נופר שפר | Corporate events, performance and family photographer - Nofar Shafer",
+  title: "נופר שפר - צלמת מקצועית | Nofar Sheffer - Professional Photographer",
+  description: "צלמת אירועי חברה, פרפורמס ומשפחה - נופר שפר | Corporate events, performance and family photographer - Nofar Sheffer",
 };
 
 export default function RootLayout({ children }) {

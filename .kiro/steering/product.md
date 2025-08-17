@@ -1,6 +1,6 @@
 # Product Overview
 
-This is a photography portfolio website for Nofar Shafer (נופר שפר), a bilingual photographer. The site showcases different types of photography work through organized galleries and includes a blog section.
+This is a photography portfolio website for Nofar Sheffer (נופר שפר), a bilingual photographer. The site showcases different types of photography work through organized galleries and includes a blog section.
 
 ## Key Features
 - Multi-category photo galleries (people, cars, art)

@@ -5,25 +5,25 @@ export const translations = {
     galleries: "גלריות",
     blog: "בלוג",
     contact: "צור קשר",
-    
+
     // Contact
     contactUs: "צרו קשר",
     phone: "נייד",
     email: "מייל",
-    
+
     // Footer
     allRightsReserved: "כל הזכויות שמורות נופר שפר © 2024",
-    
+
     // Meta
     siteTitle: "נופר שפר - צלמת מקצועית",
     siteDescription: "צלמת אירועי חברה, פרפורמס ומשפחה - נופר שפר",
-    
+
     // Gallery categories
     people: "אנשים",
     cars: "רכבים",
     art: "אמנות",
     weddings: "חתונות",
-    
+
     // Contact page
     contactTitle: "צור קשר",
     contactSubtitle: "בואו נתחיל לתכנן את הצילום הבא שלכם",
@@ -50,7 +50,7 @@ export const translations = {
     createSomethingBeautiful: "בואו נעשה משהו יפה יחד",
     dreamIdea: "יש לכם חלום? רעיון? או סתם רוצים תמונות יפות? אני כאן",
     wantToSeeMore: "רוצים לראות עוד?",
-    
+
     // Blog
     readMore: "קרא עוד",
     backToBlog: "חזרה לבלוג",
@@ -67,37 +67,37 @@ export const translations = {
     letsRead: "בואו נקרא",
     photoQuote: "כל תמונה מספרת סיפור, וכל סיפור שווה אלף מילים.",
     storyBeginning: "זהו רק התחלה של הסיפור. בקרוב יהיו כאן עוד פרטים מרתקים על הצילום הזה ועל הרגעים המיוחדים שנתפסו בעדשה.",
-    
+
     // Language switcher
     switchToEnglish: "English",
     switchToHebrew: "עברית"
   },
-  
+
   en: {
     // Navigation
     home: "Home",
     galleries: "Galleries",
     blog: "Blog",
     contact: "Contact",
-    
+
     // Contact
     contactUs: "Contact Us",
     phone: "Phone",
     email: "Email",
-    
+
     // Footer
-    allRightsReserved: "All Rights Reserved Nofar Shafer © 2024",
-    
+    allRightsReserved: "All Rights Reserved Nofar Sheffer © 2024",
+
     // Meta
-    siteTitle: "Nofar Shafer - Professional Photographer",
-    siteDescription: "Corporate events, performance and family photographer - Nofar Shafer",
-    
+    siteTitle: "Nofar Sheffer - Professional Photographer",
+    siteDescription: "Corporate events, performance and family photographer - Nofar Sheffer",
+
     // Gallery categories
     people: "People",
     cars: "Cars",
     art: "Art",
     weddings: "Weddings",
-    
+
     // Contact page
     contactTitle: "Contact",
     contactSubtitle: "Let's start planning your next photoshoot",
@@ -124,7 +124,7 @@ export const translations = {
     createSomethingBeautiful: "Let's Create Something Beautiful Together",
     dreamIdea: "Have a dream? An idea? Or just want beautiful photos? I'm here",
     wantToSeeMore: "Want to see more?",
-    
+
     // Blog
     readMore: "Read More",
     backToBlog: "Back to Blog",
@@ -135,13 +135,13 @@ export const translations = {
     postNotFound: "Post not found",
     today: "Today",
     readingTime: "3 minute read",
-    writtenBy: "Written by Nofar Shafer",
+    writtenBy: "Written by Nofar Sheffer",
     morePosts: "More Posts",
     newStory: "New Story",
     letsRead: "Let's Read",
     photoQuote: "Every photo tells a story, and every story is worth a thousand words.",
     storyBeginning: "This is just the beginning of the story. Soon there will be more fascinating details about this shoot and the special moments captured through the lens.",
-    
+
     // Language switcher
     switchToEnglish: "English",
     switchToHebrew: "עברית"

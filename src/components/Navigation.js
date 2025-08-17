@@ -19,7 +19,7 @@ const Navigation = ({ amatic }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { language, isRTL } = useLanguage();
   const t = useTranslations(language);
-  
+
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -58,7 +58,7 @@ const Navigation = ({ amatic }) => {
             />
             <div>
             <h1 className={`font-amatic text-4xl ${amatic.className}`}>
-              {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
+              {language === 'he' ? 'נופר שפר' : 'Nofar Sheffer'}
             </h1>
 
             </div>
@@ -87,7 +87,7 @@ const Navigation = ({ amatic }) => {
                     height={50}
                   />
                   <h1 className={`font-amatic text-2xl text-gray-800 ${amatic.className}`}>
-                    {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
+                    {language === 'he' ? 'נופר שפר' : 'Nofar Sheffer'}
                   </h1>
                 </Link>
                 {isMenuOpen && (
@@ -104,8 +104,8 @@ const Navigation = ({ amatic }) => {
                   href="/"
                   onClick={handleMenu}
                   className={`py-3 px-4 rounded-lg text-lg font-medium transition-all duration-200 ${
-                    currentPath === "/" 
-                      ? "text-rose-500 bg-rose-50" 
+                    currentPath === "/"
+                      ? "text-rose-500 bg-rose-50"
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
@@ -115,8 +115,8 @@ const Navigation = ({ amatic }) => {
                   href="/gallery/people"
                   onClick={handleMenu}
                   className={`py-3 px-4 rounded-lg text-lg font-medium transition-all duration-200 ${
-                    currentPath === "/gallery/people" 
-                      ? "text-rose-500 bg-rose-50" 
+                    currentPath === "/gallery/people"
+                      ? "text-rose-500 bg-rose-50"
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
@@ -126,8 +126,8 @@ const Navigation = ({ amatic }) => {
                   href="/blog"
                   onClick={handleMenu}
                   className={`py-3 px-4 rounded-lg text-lg font-medium transition-all duration-200 ${
-                    currentPath === "/blog" 
-                      ? "text-rose-500 bg-rose-50" 
+                    currentPath === "/blog"
+                      ? "text-rose-500 bg-rose-50"
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
@@ -137,8 +137,8 @@ const Navigation = ({ amatic }) => {
                   href="/contact"
                   onClick={handleMenu}
                   className={`py-3 px-4 rounded-lg text-lg font-medium transition-all duration-200 ${
-                    currentPath === "/contact" 
-                      ? "text-rose-500 bg-rose-50" 
+                    currentPath === "/contact"
+                      ? "text-rose-500 bg-rose-50"
                       : "text-gray-700 hover:text-rose-500 hover:bg-gray-50"
                   }`}
                 >
@@ -154,8 +154,8 @@ const Navigation = ({ amatic }) => {
                 <div className="space-y-2 text-gray-600">
                   <p className="flex items-center gap-2">
                     <span className="text-sm">{translations.phone}:</span>
-                    <a 
-                      href="https://wa.me/0522832144" 
+                    <a
+                      href="https://wa.me/0522832144"
                       className="hover:text-rose-500 transition-colors duration-200 font-medium"
                     >
                       0522832144
@@ -163,7 +163,7 @@ const Navigation = ({ amatic }) => {
                   </p>
                   <p className="flex items-center gap-2">
                     <span className="text-sm">{translations.email}:</span>
-                    <a 
+                    <a
                       href="mailto:kuli.nof@gmail.com"
                       className="hover:text-rose-500 transition-colors duration-200 font-medium text-sm"
                     >
@@ -172,21 +172,21 @@ const Navigation = ({ amatic }) => {
                   </p>
                 </div>
               </div>
-              
+
               {/* Language Switcher & Social Media */}
               <div className="flex items-center justify-between pt-4">
                 <LanguageSwitcher />
                 <div className="flex gap-3">
-                  <a 
-                    href="https://www.instagram.com/nofikulu/" 
+                  <a
+                    href="https://www.instagram.com/nofikulu/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
                   >
                     <FaInstagram className="text-lg" />
                   </a>
-                  <a 
-                    href="https://www.facebook.com/profile.php?id=100076431135095" 
+                  <a
+                    href="https://www.facebook.com/profile.php?id=100076431135095"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full bg-rose-50 text-rose-500 hover:bg-rose-100 hover:scale-110 transition-all duration-200"
@@ -212,7 +212,7 @@ const Navigation = ({ amatic }) => {
             />
             <div>
               <h1 className={`font-amatic text-4xl ${amatic.className}`}>
-                {language === 'he' ? 'נופר שפר' : 'Nofar Shafer'}
+                {language === 'he' ? 'נופר שפר' : 'Nofar Sheffer'}
               </h1>
 
             </div>

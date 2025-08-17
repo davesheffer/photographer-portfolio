@@ -30,7 +30,7 @@ const GalleryRegularLightbox = ({ images, setShowGallery, setSelectedImage, sele
                 initialSlide={Math.max(0, Math.min(selectedImage || 0, images.length - 1))}
                 onSwiper={(swiper) => {}}>
                 {images.map((image, index) => (
-                    <SwiperSlide key={`${image.id || index}-${index}`}>
+                    <SwiperSlide key={`regular-lightbox-${image.id}-${index}`}>
                         <GalleryRegularLightboxSlide index={index} setSelectedImage={setSelectedImage} image={image} />
                     </SwiperSlide>
                 ))}

@@ -8,7 +8,7 @@ import GalleryMultiSlide from "./GalleryMultiSlide";
 const getFilteredImages = (gallery) => {
     return gallery.images
         .filter(image => image.style === "landscape")
-
+        .sort((a, b) => a.id - b.id);
 };
 
 const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
@@ -32,7 +32,7 @@ const GalleryMultiSwiper = ({ galleries, handleImageClick, setRealIndex }) => {
                         className="cursor-pointer"
                     >
                         {filteredImages.map((image, imageIndex) => (
-                            <SwiperSlide key={image.id}>
+                            <SwiperSlide key={`${image.id}-${imageIndex}-${galleryId}`}>
                                 <GalleryMultiSlide index={imageIndex} image={image} />
                             </SwiperSlide>
                         ))}

@@ -35,7 +35,7 @@ const GalleryMultiLightbox = ({ selectedLightbox, showGallery, setShowGallery, r
                 initialSlide={Math.max(0, Math.min(realIndex || 0, selectedLightbox.length - 1))}
             >
                 {selectedLightbox.map((image, index) => (
-                    <SwiperSlide key={`${image.id}-${index}`}>
+                    <SwiperSlide key={`lightbox-${image.id}-${index}`}>
                         <GalleryMultiLightboxSlide index={index} image={image} />
                     </SwiperSlide>
                 ))}

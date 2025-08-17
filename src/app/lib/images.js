@@ -14,7 +14,6 @@ import car3 from "/public/cars/car3.jpg";
 import car4 from "/public/cars/car4.jpg";
 import car5 from "/public/cars/car5.jpg";
 
-
 // gallery images
 import h1 from "/public/wg/h/h1.jpg";
 import h2 from "/public/wg/h/h2.jpg";
@@ -59,7 +58,6 @@ import wed7 from "/public/wg/wedding/wed7.jpg";
 
 import bd1 from "/public/wg/bd/bd1.jpg";
 import bd2 from "/public/wg/bd/bd2.jpg";
-
 import bd4 from "/public/wg/bd/bd4.jpg";
 import bd5 from "/public/wg/bd/bd5.jpg";
 import bd6 from "/public/wg/bd/bd6.jpg";
@@ -73,369 +71,45 @@ import w6 from "/public/wg/water/w6.jpg";
 import w7 from "/public/wg/water/w7.jpg";
 import w8 from "/public/wg/water/w8.jpg";
 
-
-
 const images = {
-
     slider: [
-        {
-            id: 5,
-            src: Slider_5,
-            alt: "pole",
-        },
-
         {
             id: 1,
             src: f3,
             alt: "noam",
         },
-
+        {
+            id: 2,
+            src: h2,
+            alt: "shlomitbrit",
+        },
         {
             id: 3,
             src: Slider_3,
             alt: "yam",
         },
         {
-            id: 3,
+            id: 4,
             src: gh1,
             alt: "chickgav",
         },
         {
-            id: 7,
-            src: two,
-            alt: "two",
+            id: 5,
+            src: Slider_5,
+            alt: "pole",
         },
         {
-            id: 3,
-            src: h2,
-            alt: "shlomitbrit",
+            id: 6,
+            src: two,
+            alt: "two",
         },
     ],
     people: [
         [
             {
-                name: "hilel" ,
-                order: 3,
-                images: [
-                    {
-                        id: 1,
-                        src: h2,
-                        alt: "h2",
-                        style: "landscape",
-                        featured: true,
-                    },
-                    {
-                        id: 2,
-                        src: h7,
-                        alt: "h7",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 2,
-                        src: h1,
-                        alt: "h1",
-                        style: "landscape",
-                    },
-
-                    {
-                        id: 3,
-                        src: h1,
-                        alt: "h1",
-                        style: "landscape",
-                    },
-                  
-                    {
-                        id: 4,
-                        src: h3,
-                        alt: "h3",
-                        style: "landscape",
-                    },
-                    {
-                        id: 5,
-                        src: h4,
-                        alt: "h4",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 6,
-                        src: h5,
-                        alt: "h5",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 7,
-                        src: h6,
-                        alt: "h6",
-                        style: "landscape",
-
-                    },
-                   
-                ]
-            },
-            {
-                name: "friends",
-                order: 6,
-                images: [
-                    {
-                        id: 3,
-                        src: f3,
-                        alt: "smile",
-                        style: "landscape",
-                        featured: true,
-
-
-                    },
-                    {
-                        id: 1,
-                        src: f3,
-                        alt: "smile",
-                        style: "landscape",
-                        featured: true,
-                    },
-                    {
-                        id: 2,
-                        src: f1,
-                        alt: "group",
-                        style: "landscape",
-
-
-                    },
-                    {
-                        id: 3,
-                        src: f2,
-                        alt: "twomen",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 3,
-                        src: f3,
-                        alt: "smile",
-                        style: "landscape",
-                        featured: true,
-
-
-                    },
-                    {
-                        id: 4,
-                        src: f4,
-                        alt: "mombaby",
-                        style: "landscape",
-
-                    },
-
-                    {
-                        id: 5,
-                        src: f5,
-                        alt: "shlomit",
-                        style: "landscape",
-
-                    },
-                ]
-            },
-            {
-                name: "bama",
-                order: 7,
-                images: [
-                    {
-                        id: 3,
-                        src: bm3,
-                        alt: "fun",
-                        style: "landscape",
-                        featured: true,
-                    },
-                    {
-                        id: 1,
-                        src: bm1,
-                        alt: "bishof2",
-                        style: "landscape",
-
-                    },
-                   
-                    {
-                        id: 3,
-                        src: bm3,
-                        alt: "fun",
-                        style: "landscape",
-                     
-                    
-                    },
-
-                    {
-                        id: 2,
-                        src: bm1,
-                        alt: "bishof2",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 4,
-                        src: bm4,
-                        alt: "mombaby",
-                        style: "landscape",
-                    },
-
-                    {
-                        id: 5,
-                        src: bm5,
-                        alt: "mombaby",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 7,
-                        src: bm7,
-                        alt: "smile",
-                        style: "landscape",
-                    },
-                    {
-                        id: 8,
-                        src: bm8,
-                        alt: "together",
-                        style: "landscape",
-                    },
-                    {
-                        id: 11,
-                        src: bm11,
-                        alt: "together",
-                        style: "landscape",
-                    },
-
-                ]
-            },
-            {
-                name: "wedding",
-                order: 5,
-                images: [
-                    {
-                        id: 5,
-                        src: wed5,
-                        alt: "shlomit",
-                        style: "landscape",
-                        featured: true,
-
-                    },
-                    {
-                        id: 1,
-                        src: wed5,
-                        alt: "shlomit",
-                        style: "landscape",
-                        featured: true,
-
-                    },
-                    {
-                        id: 2,
-                        src: wed1,
-                        alt: "",
-
-                    },
-                    {
-                        id: 3,
-                        src: wed2,
-                        alt: "friends",
-                        style: "landscape",
-                    },
-                    {
-                        id: 4,
-                        src: wed3,
-                        alt: "fun",
-                        style: "landscape",
-
-
-                    },
-                    {
-                        id: 5,
-                        src: wed4,
-                        alt: "mombaby",
-                        style: "landscape",
-
-                    },
-
-                    {
-                        id: 5,
-                        src: wed5,
-                        alt: "shlomit",
-                        style: "landscape",
-                        featured: true,
-
-                    },
-                    {
-                        id: 6,
-                        src: wed6,
-                        alt: "smile",
-                        style: "landscape",
-
-
-                    },
-                    {
-                        id: 7,
-                        src: wed7,
-                        alt: "together",
-                        style: "landscape",
-                    },
-                ]
-            },
-            {
-                name: "family",
-                order: 2,
-
-                images: [
-                    {
-                        id: 1,
-                        src: fam1,
-                        alt: "bishof2",
-                        style: "landscape",
-                        featured: true,
-
-                    },
-                    {
-                        id: 2,
-                        src: fam2,
-                        alt: "friends",
-                        style: "landscape"
-                    },
-                    {
-                        id: 4,
-                        src: fam4,
-                        alt: "fam1",
-                        style: "landscape",
-                    },
-                    {
-                        id: 5,
-                        src: fam5,
-                        alt: "mombaby",
-                        style: "landscape",
-
-                    },
-
-                    {
-                        id: 6,
-                        src: fam6,
-                        alt: "shlomit",
-                        style: "landscape",
-
-                    },
-                    // {id: 7,
-                    //     src: fam7,
-                    //     alt: 'gingi',
-                    //     style: "landscape",
-                    // }
-                ]
-            },
-            {
                 name: "bd",
                 order: 1,
                 images: [
-                    {
-                        id: 4,
-                        src: bd4,
-                        alt: "girl2",
-                        style: "landscape",
-                        featured: true,
-                    },
                     {
                         id: 1,
                         src: bd4,
@@ -448,44 +122,111 @@ const images = {
                         src: bd2,
                         alt: "flora",
                         style: "landscape",
-
                     },
-
-
+                    {
+                        id: 3,
+                        src: bd5,
+                        alt: "house",
+                        style: "landscape",
+                    },
                     {
                         id: 4,
-                        src: bd4,
-                        alt: "girl2",
+                        src: bd6,
+                        alt: "ladies",
+                        style: "landscape",
+                    }
+                ]
+            },
+            {
+                name: "family",
+                order: 2,
+                images: [
+                    {
+                        id: 1,
+                        src: fam1,
+                        alt: "bishof2",
                         style: "landscape",
                         featured: true,
                     },
                     {
-                        id: 4,
-                        src: bd5,
-                        alt: "house",
+                        id: 2,
+                        src: fam2,
+                        alt: "friends",
+                        style: "landscape"
+                    },
+                    {
+                        id: 3,
+                        src: fam4,
+                        alt: "fam1",
                         style: "landscape",
-
+                    },
+                    {
+                        id: 4,
+                        src: fam5,
+                        alt: "mombaby",
+                        style: "landscape",
                     },
                     {
                         id: 5,
-                        src: bd6,
-                        alt: "ladies",
+                        src: fam6,
+                        alt: "shlomit",
                         style: "landscape",
-
-                    }
+                    },
+                ]
+            },
+            {
+                name: "hilel",
+                order: 3,
+                images: [
+                    {
+                        id: 1,
+                        src: h2,
+                        alt: "h2",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 2,
+                        src: h1,
+                        alt: "h1",
+                        style: "landscape",
+                    },
+                    {
+                        id: 3,
+                        src: h7,
+                        alt: "h7",
+                        style: "landscape",
+                    },
+                    {
+                        id: 4,
+                        src: h3,
+                        alt: "h3",
+                        style: "landscape",
+                    },
+                    {
+                        id: 5,
+                        src: h4,
+                        alt: "h4",
+                        style: "landscape",
+                    },
+                    {
+                        id: 6,
+                        src: h5,
+                        alt: "h5",
+                        style: "landscape",
+                    },
+                    {
+                        id: 7,
+                        src: h6,
+                        alt: "h6",
+                        style: "landscape",
+                    },
                 ]
             },
             {
                 name: "water",
                 order: 4,
                 images: [
-                    {
-                        id: 4,
-                        src: w3,
-                        alt: "dmp",
-                        style: "landscape",
-                        featured: true,
-                    },
                     {
                         id: 1,
                         src: w3,
@@ -495,66 +236,224 @@ const images = {
                     },
                     {
                         id: 2,
-                        src: w7,
-                        alt: "ladies",
-                        style: "landscape",
-
-                    },
-                    {
-                        id: 3,
-                        src: w8,
-                        alt: "ladies",
-                        style: "landscape",
-                    },
-                    {
-                        id: 4,
                         src: w1,
                         alt: "tree",
                         style: "landscape",
                     },
                     {
-                        id: 5,
+                        id: 3,
                         src: w2,
                         alt: "flora",
                         style: "landscape",
-
                     },
                     {
                         id: 4,
-                        src: w3,
-                        alt: "dmp",
+                        src: w7,
+                        alt: "ladies",
                         style: "landscape",
-                        featured: true,
+                    },
+                    {
+                        id: 5,
+                        src: w8,
+                        alt: "ladies",
+                        style: "landscape",
                     },
                     {
                         id: 6,
                         src: w4,
                         alt: "house",
                         style: "landscape",
-
                     },
                     {
                         id: 7,
                         src: w5,
                         alt: "ladies",
                         style: "landscape",
-
                     },
                     {
                         id: 8,
                         src: w6,
                         alt: "ladies",
                         style: "landscape",
-
                     }
-
                 ]
             },
-          
-
+            {
+                name: "wedding",
+                order: 5,
+                images: [
+                    {
+                        id: 1,
+                        src: wed5,
+                        alt: "shlomit",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 2,
+                        src: wed1,
+                        alt: "wedding ceremony",
+                        style: "landscape",
+                    },
+                    {
+                        id: 3,
+                        src: wed2,
+                        alt: "friends",
+                        style: "landscape",
+                    },
+                    {
+                        id: 4,
+                        src: wed3,
+                        alt: "fun",
+                        style: "landscape",
+                    },
+                    {
+                        id: 5,
+                        src: wed4,
+                        alt: "mombaby",
+                        style: "landscape",
+                    },
+                    {
+                        id: 6,
+                        src: wed6,
+                        alt: "smile",
+                        style: "landscape",
+                    },
+                    {
+                        id: 7,
+                        src: wed7,
+                        alt: "together",
+                        style: "landscape",
+                    },
+                ]
+            },
+            {
+                name: "friends",
+                order: 6,
+                images: [
+                    {
+                        id: 1,
+                        src: f3,
+                        alt: "smile",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 2,
+                        src: f1,
+                        alt: "group",
+                        style: "landscape",
+                    },
+                    {
+                        id: 3,
+                        src: f2,
+                        alt: "twomen",
+                        style: "landscape",
+                    },
+                    {
+                        id: 4,
+                        src: f4,
+                        alt: "mombaby",
+                        style: "landscape",
+                    },
+                    {
+                        id: 5,
+                        src: f5,
+                        alt: "shlomit",
+                        style: "landscape",
+                    },
+                ]
+            },
+            {
+                name: "bama",
+                order: 7,
+                images: [
+                    {
+                        id: 1,
+                        src: bm1,
+                        alt: "bishof2",
+                        style: "landscape",
+                    },
+                    {
+                        id: 2,
+                        src: bm3,
+                        alt: "fun",
+                        style: "landscape",
+                        featured: true,
+                    },
+                    {
+                        id: 3,
+                        src: bm4,
+                        alt: "mombaby",
+                        style: "landscape",
+                    },
+                    {
+                        id: 4,
+                        src: bm5,
+                        alt: "mombaby",
+                        style: "landscape",
+                    },
+                    {
+                        id: 5,
+                        src: bm7,
+                        alt: "smile",
+                        style: "landscape",
+                    },
+                    {
+                        id: 6,
+                        src: bm8,
+                        alt: "together",
+                        style: "landscape",
+                    },
+                    {
+                        id: 7,
+                        src: bm11,
+                        alt: "together",
+                        style: "landscape",
+                    },
+                ]
+            },
         ],
     ],
+    cars: [
+        {
+            id: 1,
+            src: car1,
+            alt: "car1",
+        },
+        {
+            id: 2,
+            src: car2,
+            alt: "car2",
+        },
+        {
+            id: 3,
+            src: car3,
+            alt: "car3",
+        },
+        {
+            id: 4,
+            src: car4,
+            alt: "car4",
+        },
+        {
+            id: 5,
+            src: car5,
+            alt: "car5",
+        },
+    ],
+    art: [
+        {
+            id: 1,
+            src: two,
+            alt: "two",
+        },
+        {
+            id: 2,
+            src: gh1,
+            alt: "chickgav",
+        },
+    ],
 };
-
 
 export default images;

@@ -9,17 +9,17 @@ import { useTranslations } from "@/lib/translations";
 const Contact = () => {
     const { language, isRTL } = useLanguage();
     const t = useTranslations(language);
-    
+
     return (
         <div className={`min-h-screen ${isRTL ? 'md:mr-[15vw]' : 'md:ml-[15vw]'} md:mt-0 mt-[7vh] bg-white`}>
             <div className="h-screen flex">
                 <div className="w-full grid grid-cols-1 lg:grid-cols-10 min-h-screen">
-                    
+
                     {/* Image Side - 70% */}
                     <div className={`${isRTL ? 'lg:order-2 lg:col-span-7' : 'lg:order-1 lg:col-span-7'} relative`}>
-                        <Image 
-                            src={images.people[0][0].images[0].src} 
-                            alt={language === 'he' ? 'נופר שפר - צלמת מקצועית' : 'Nofar Shafer - Professional Photographer'} 
+                        <Image
+                            src={images.people[0][0].images[0].src}
+                            alt={language === 'he' ? 'נופר שפר - צלמת מקצועית' : 'Nofar Shafer - Professional Photographer'}
                             className="w-full h-full object-cover"
                             width={800}
                             height={800}
@@ -31,7 +31,7 @@ const Contact = () => {
                     {/* Content Side - 30% */}
                     <div className={`${isRTL ? 'lg:order-1 lg:col-span-3' : 'lg:order-2 lg:col-span-3'} flex items-center justify-center p-8 bg-white`}>
                         <div className="w-full space-y-6">
-                            
+
                             {/* About */}
                             <div>
                                 <p className="text-base text-gray-600 leading-relaxed">
@@ -57,7 +57,7 @@ const Contact = () => {
 
                             {/* Services */}
                             <div>
-                                <p className="text-sm text-gray-500 mb-3">{t.whatIPhotograph}</p>
+
                                 <div className="flex flex-wrap gap-4 text-sm text-gray-600">
                                     <span>{t.families}</span>
                                     <span>•</span>
@@ -71,24 +71,24 @@ const Contact = () => {
 
                             {/* Social */}
                             <div className="flex gap-6">
-                                <a 
-                                    href="https://www.instagram.com/nofikulu/" 
+                                <a
+                                    href="https://www.instagram.com/nofikulu/"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-400 hover:text-gray-600 transition-colors"
                                 >
                                     <FaInstagram className="text-xl" />
                                 </a>
-                                <a 
-                                    href="https://www.facebook.com/profile.php?id=100076431135095" 
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=100076431135095"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-400 hover:text-gray-600 transition-colors"
                                 >
                                     <FaFacebook className="text-xl" />
                                 </a>
-                                <a 
-                                    href="https://wa.me/0522832144" 
+                                <a
+                                    href="https://wa.me/0522832144"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="text-gray-400 hover:text-gray-600 transition-colors"
